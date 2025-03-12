@@ -155,7 +155,90 @@ public class RestAPIController {
        		 * Extract input information from Body depending on Content-Type Header
        		 */
        		File auxFile = decoder.decodeMultipartfile(file,null,contentTypeHeader);       		
-        	Object output = grobid.analyze(auxFile, language, analysis);
+        	Object output = grobid.analyze(auxFile, language, analysis,false);
+
+        	HttpHeaders responseHeaders = new HttpHeaders();
+    		ResponseEntity<String> response = null;    		
+            HttpStatus hStatus = HttpStatus.OK;
+            String sResult = null;
+        	if(output != null) {
+                responseHeaders.add("Content-Type", acceptHeader);
+                sResult = decoder.encode(output,acceptHeader);
+        	}
+        	else {
+        		sResult = "Error: output object is NULL.";
+        		responseHeaders.add("Content-Type", "text/plain");
+            	hStatus = HttpStatus.INTERNAL_SERVER_ERROR;            	
+        	}
+    		response = new ResponseEntity<String>(sResult, responseHeaders, hStatus);
+            return response;
+        } catch (Exception e) {
+        	logger.severe(e.getMessage());
+            throw e;
+        }
+    }
+
+		/**
+	 * Method of the endpoint for semantically analysing information (text, documents, etc.) 
+	 * 
+	 * @param analysis Analysis from Grobid to use
+	 * @param language Language of the text in the document
+	 * @param acceptHeader Output format of the processed information (XML, JSON and TURTLE are supported).
+	 * @param contentTypeHeader Format of the file to be processed (PDF is supported).
+	 * @param allParams generic parameter not used
+	 * @param file File to be processed
+	 * @return
+	 * @throws Exception
+	 */
+	@Operation(
+			summary = "Analyse PDF document to recognize structural elements.",
+			responses = {
+					@ApiResponse(responseCode = "200",
+							description = "Message containing the processed object (Scilake Document), stating that the information object (text, document, etc.) has been correctly processed.",
+							content = @Content(mediaType = MediaType.APPLICATION_JSON_VALUE)),
+					@ApiResponse(responseCode = "400",
+					description = "Bad request.",
+					content = @Content(mediaType = MediaType.TEXT_PLAIN_VALUE)),
+					@ApiResponse(responseCode = "500",
+					description = "An error has ocurred in the server.",
+					content = @Content(mediaType = MediaType.TEXT_PLAIN_VALUE))
+			})
+	@CrossOrigin
+	@RequestMapping(value = "/analyzeAndClassifyText", method = {RequestMethod.POST})
+	public ResponseEntity<String> analyzeAndClassifyText(
+			HttpServletRequest request,
+			@RequestParam(value = "analysis", required = false) String analysis,
+			@RequestParam(value = "language", required = false) String language,
+			@RequestHeader(value = "Accept", required = false) String acceptHeader,
+			@RequestHeader(value = "Content-Type", required = false) String contentTypeHeader,
+            @RequestParam Map<String, String> allParams,
+            @RequestParam("file") MultipartFile file,
+            @RequestBody(required = false) String postBody) throws Exception {
+		if (language == null || language.equalsIgnoreCase("")) {
+			language = "en";
+			logger.warning("The input language is not defined. English (\"EN\") is used.");
+		}
+		if (analysis == null || analysis.equalsIgnoreCase("")) {
+			analysis = "all";
+			logger.warning("The input analysis is not defined. All (\"all\") is used.");
+		}
+		if (contentTypeHeader == null || contentTypeHeader.equalsIgnoreCase("")) {
+			throw new Exception("Content-Type Header is not defined.");
+		}
+		if (acceptHeader == null || acceptHeader.equalsIgnoreCase("")) {
+			language = "en";
+			logger.warning("The input language is not defined. English (\"EN\") is used.");
+			//throw new Exception("Accept Header is not defined.");
+		}
+		if (file == null) {
+			throw new Exception("Error: Multipartfile 'file' body can not be null.");
+		}
+       	try {       		
+       		/**
+       		 * Extract input information from Body depending on Content-Type Header
+       		 */
+       		File auxFile = decoder.decodeMultipartfile(file,null,contentTypeHeader);       		
+        	Object output = grobid.analyze(auxFile, language, analysis,false);
 
         	HttpHeaders responseHeaders = new HttpHeaders();
     		ResponseEntity<String> response = null;    		

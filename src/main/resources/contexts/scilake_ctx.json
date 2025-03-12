@@ -1,0 +1,247 @@
+{
+	"@base": "http://qurator-projekt.de/res/",
+	"nif": "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#",
+	"itsrdf": "http://www.w3.org/2005/11/its/rdf#",
+	"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+	"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+	"owl": "http://www.w3.org/2002/07/owl#",
+	"skos": "http://www.w3.org/2004/02/skos/core#",
+	"dct": "http://purl.org/dc/terms/",
+	"dbo": "http://dbpedia.org/ontology/",
+	"dbr": "http://dbpedia.org/resource/",
+	"lkg": "http://lkg.lynx-project.eu/def/",
+	"xsd": "http://www.w3.org/2001/XMLSchema#",
+	"eli": "http://data.europa.eu/eli/ontology#",
+	"foaf": "http://xmlns.com/foaf/0.1/",
+	"qont": "http://qurator-projekt.de/ontology/",
+	"scilake": "http://scilake-projekt.eu/ontology/",
+	"sci-res": "http://scilake-projekt.eu/res/",
+	"sameAs": "owl:sameAs",
+	"text": "nif:isString",
+	"parts": {
+		"@id": "scilake:has_part",
+		"@container": "@set"
+	},
+	"authors": {
+		"@id": "scilake:has_authors",
+		"@container": "@set"
+	},
+	"auth_firstname": {
+		"@id": "scilake:firstname"
+	},
+	"auth_middlename": {
+		"@id": "scilake:middlename"
+	},
+	"auth_lastname": {
+		"@id": "scilake:lastname"
+	},
+	"auth_title": {
+		"@id": "scilake:title"
+	},
+	"auth_suffix": {
+		"@id": "scilake:suffix"
+	},
+	"auth_rawname": {
+		"@id": "scilake:rawname"
+	},
+	"auth_orcid": {
+		"@id": "scilake:orcid"
+	},
+	"auth_corresp": {
+		"@id": "scilake:corresp"
+	},
+	"auth_affiliationsblocks": {
+		"@id": "scilake:affiliationBlocks",
+		"@container": "@set"
+	},
+	"auth_affiliationMarkers": {
+		"@id": "scilake:affiliationMarkers",
+		"@container": "@set"
+	},
+	"auth_markers": {
+		"@id": "scilake:markers",
+		"@container": "@set"
+	},
+	"auth_email": {
+		"@id": "scilake:email"
+	},
+	"auth_valid": {
+		"@id": "scilake:valid"
+	},
+	"affiliation": {
+		"@id": "scilake:has_affiliation",
+		"@container": "@set"
+	},
+	"aff_acronym": {
+		"@id": "scilake:affAcronym"
+	},
+	"aff_name": {
+		"@id": "scilake:affName"
+	},
+	"aff_url": {
+		"@id": "scilake:affURL"
+	},
+	"aff_country": {
+		"@id": "scilake:affCountry"
+	},
+	"aff_postCode": {
+		"@id": "scilake:affPostCode"
+	},
+	"aff_postBox": {
+		"@id": "scilake:affPostBox"
+	},
+	"aff_region": {
+		"@id": "scilake:affRegion"
+	},
+	"aff_settlement": {
+		"@id": "scilake:affSettlement"
+	},
+	"aff_addrLine": {
+		"@id": "scilake:affAddrLine"
+	},
+	"aff_marker": {
+		"@id": "scilake:affMarker"
+	},
+	"aff_addressString": {
+		"@id": "scilake:affAddressString"
+	},
+	"aff_affiliationString": {
+		"@id": "scilake:affAffiliationString"
+	},
+	"aff_failAffiliation": {
+		"@id": "scilake:affFailAffiliation"
+	},
+	"aff_rawAffiliationString": {
+		"@id": "scilake:affRawAffiliationString"
+	},
+	"aff_key": {
+		"@id": "scilake:affKey"
+	},
+	"aff_institution": {
+		"@id": "scilake:has_institution",
+		"@container": "@set"
+	},
+	"aff_department": {
+		"@id": "scilake:has_department",
+		"@container": "@set"
+	},
+	"aff_laboratory": {
+		"@id": "scilake:has_laboratory",
+		"@container": "@set"
+	},
+	"location_name": {
+		"@id": "scilake:locationName"
+	},
+	"references": {
+		"@id": "scilake:has_references",
+		"@container": "@set"
+	},
+	"offset_ini": {
+		"@id": "nif:beginIndex",
+		"@type": "xsd:nonNegativeInteger"
+	},
+	"offset_end": {
+		"@id": "nif:endIndex",
+		"@type": "xsd:nonNegativeInteger"
+	},
+	"parent": {
+		"@id": "nif:referenceContext",
+		"@type": "@id"
+	},
+	"metadata": {
+		"@id": "qont:metadata"
+	},
+	"subject": {
+		"@id": "dct:subject",
+		"@container": "@set"
+	},
+	"comment": {
+		"@id": "rdfs:comment"
+	},
+	"id_local": {
+		"@id": "eli:id_local"
+	},
+	"part_type": {
+		"@id": "scilake:DocumentPartType"
+	},
+	"source": {
+		"@id": "dct:source"
+	},
+	"sci_title": {
+		"@id": "dct:title"
+	},
+	"sci_number": {
+		"@id": "dct:section_number"
+	},
+	"version": {
+		"@id": "eli:version",
+		"@container": "@set"
+	},
+	"summary": {
+		"@id": "lkg:summary",
+		"@container": "@set"
+	},
+	"language": {
+		"@id": "dct:language",
+		"@container": "@set"
+	},
+	"type_document": {
+		"@id": "eli:type_document",
+		"@container": "@set"
+	},
+	"links": {
+		"@id": "rdfs:seeAlso",
+		"@type": "@id",
+		"@container": "@set"
+	},
+	"uri": {
+		"@id": "dct:uri",
+		"@type": "@id"
+	},
+	"taClassRef": {
+		"@id": "itsrdf:taClassRef",
+		"@type": "@id"
+	},
+	"taIdentRef": {
+		"@id": "itsrdf:taIdentRef",
+		"@type": "@id"
+	},
+	"referenceContext": {
+		"@id": "nif:referenceContext",
+		"@type": "@id"
+	},
+	"taConfidence": {
+		"@id": "itsrdf:taConfidence",
+		"@type": "xsd:decimal"
+	},
+	"taClassConf": {
+		"@id": "nif:taClassConf",
+		"@type": "xsd:decimal"
+	},
+	"anchorOf": {
+		"@id": "nif:anchorOf"
+	},
+	"annotationUnit": {
+		"@id": "nif:annotationUnit",
+		"@container": "@set"
+	},
+	"annotations": {
+		"@reverse": "nif:referenceContext"
+	},
+	"document_annotations": {
+		"@id": "qont:DocumentAnnotations",
+		"@container": "@set"
+	},
+	"generatedtext": {
+		"@id": "qont:generatedText"
+	},
+	"labelUnits": {
+		"@id": "qont:LabelUnit",
+		"@container": "@set"
+	},
+	"qont:Label": "qont:Label",
+	"topic": {
+		"@id": "qont:Topic",
+		"@type": "@id"
+	}
+}
