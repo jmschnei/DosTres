@@ -8,10 +8,11 @@ RUN apt-get -y update && \
 RUN mkdir -p /tmp/dostres
 WORKDIR /tmp/dostres
 
-RUN wget https://github.com/kermitt2/grobid/archive/0.7.2.zip
-RUN unzip 0.7.2.zip
+# RUN wget https://github.com/kermitt2/grobid/archive/0.8.2.zip
+ADD 0.8.2.zip .
+RUN unzip 0.8.2.zip
 
-WORKDIR /tmp/dostres/grobid-0.7.2/
+WORKDIR /tmp/dostres/grobid-0.8.2/
 
 RUN ./gradlew clean install
 

@@ -23,7 +23,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({ "id", "type" })
 //@JsonDeserialize(using = LynxPartDeserializer.class)
-public class ScientificDocumentPart extends PositionAnnotation {
+public class ScientificDocumentPart extends LabelPositionAnnotation {
 
 	@JsonProperty("sci_title")
 	public String title;           //title, e.g. "Introduction"

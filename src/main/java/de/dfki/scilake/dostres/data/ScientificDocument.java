@@ -45,9 +45,6 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import de.qurator.commons.BaseAnnotation;
-import de.qurator.commons.LabelPositionAnnotation;
-import de.qurator.commons.TextAnnotation;
 
 /**
  * @author julianmorenoschneider
@@ -530,6 +527,9 @@ public class ScientificDocument {
         List<String> types = new ArrayList<String>(Arrays.asList(new String[]{"nif:Context", "nif:OffsetBasedString", "scilake:ScientificDocument"}));
 		dd.setType(types);
 
+		BiblioItem biblio = new BiblioItem();
+		
+
 		String wholeText = "";
 		int counter = 0;
 
@@ -598,6 +598,183 @@ public class ScientificDocument {
 			}
 			text = text.trim();
 			ScientificDocumentPart qdp = new ScientificDocumentPart(dd.getId(), title, number, counter, counter+text.length(), text, "section");
+			dd.addPart(qdp);
+			counter = counter + text.length() + 1;
+			wholeText = wholeText + " " + text;
+		}
+		
+		String expression_ack = "//back/div";
+		NodeList nodeList_back_div = (NodeList) xPath.compile(expression_ack).evaluate(xmlDocument, XPathConstants.NODESET);
+		for (int k = 0; k < nodeList_back_div.getLength(); k++) {
+            Node node = nodeList_back_div.item(k);
+			Element e = (Element) node;
+			if (e.getAttribute("type")!=null && e.getAttribute("type").equalsIgnoreCase("acknowledgement")){
+				NodeList heads = e.getElementsByTagName("head");
+				String title = null;
+				for (int j = 0; j < heads.getLength(); j++) {
+					Node head = heads.item(j);
+					Element head_element = (Element) head;
+					title = head_element.getTextContent();
+				}
+				String text = "";
+				NodeList ps = e.getElementsByTagName("p");
+				for (int j = 0; j < ps.getLength(); j++) {
+					Node p = ps.item(j);
+					Element p_element = (Element) p;
+					text = text + " " + p_element.getTextContent();
+					//System.out.println(p_element.getTextContent());
+				}
+				text = text.trim();
+				ScientificDocumentPart qdp = new ScientificDocumentPart(dd.getId(), title, "", counter, counter+text.length(), text, "acknowledgement");
+				dd.addPart(qdp);
+				counter = counter + text.length() + 1;
+				wholeText = wholeText + " " + text;
+			}
+		}
+		dd.setText(wholeText.trim());
+		return dd;
+	}
+
+	public static ScientificDocument createScientificDocumentFromTEI(String xmlString) throws Exception {
+		ScientificDocument dd = new ScientificDocument("http://scilake-project.eu/res/"+UUID.randomUUID().toString().substring(0,8), "Example text to be modified", "en");
+        List<String> types = new ArrayList<String>(Arrays.asList(new String[]{"nif:Context", "nif:OffsetBasedString", "scilake:ScientificDocument"}));
+		dd.setType(types);
+
+		Map<String, List<String>> sections = new HashMap<String, List<String>>();
+		sections.put("introduction", new ArrayList<String>(Arrays.asList(new String[]{"introduction"})));
+		sections.put("background", new ArrayList<String>(Arrays.asList(new String[]{"background", "related work"})));
+		sections.put("methods", new ArrayList<String>(Arrays.asList(new String[]{"methods", "methodology", "materials and methods", "approach", "method"})));
+		sections.put("evaluation", new ArrayList<String>(Arrays.asList(new String[]{"experiments", "evaluation", "experiment"})));
+		sections.put("results", new ArrayList<String>(Arrays.asList(new String[]{"results", "findings"})));
+		sections.put("discussion", new ArrayList<String>(Arrays.asList(new String[]{"discussion", "analysis"})));
+		sections.put("conclusion", new ArrayList<String>(Arrays.asList(new String[]{"conclusion", "concllusions", "summary"})));
+
+		String wholeText = "";
+		int counter = 0;
+		List<ScientificAuthor> authors = new LinkedList<ScientificAuthor>();
+
+		DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
+		DocumentBuilder builder = builderFactory.newDocumentBuilder();
+		InputSource inputSource = new InputSource(new StringReader(xmlString));
+		org.w3c.dom.Document xmlDocument = builder.parse(inputSource);
+		XPath xPath = XPathFactory.newInstance().newXPath();
+
+		/**
+		 * Code to get TITLE
+		 */
+		String titleExpression = "//fileDesc/titleStmt/title";
+		NodeList titleNodeList = (NodeList) xPath.compile(titleExpression).evaluate(xmlDocument, XPathConstants.NODESET);
+		System.out.println(titleNodeList.getLength());
+
+		for (int k = 0; k < titleNodeList.getLength(); k++) {
+            Node node = titleNodeList.item(k);
+			Element e = (Element) node;
+			String doc_title = e.getTextContent();
+			System.out.println("Title: " + doc_title);
+			ScientificDocumentPart titlePart = new ScientificDocumentPart(dd.getId(), doc_title, "", counter, counter+doc_title.length(), doc_title, "title");
+			dd.addPart(titlePart);
+			counter = counter + doc_title.length() + 1;
+			wholeText = wholeText + " " + doc_title;
+		}
+		/**
+		 * Code to get ABSTRACT
+		 */
+		String abstractExpression = "//profileDesc/abstract/div";
+		NodeList abstractNodeList = (NodeList) xPath.compile(abstractExpression).evaluate(xmlDocument, XPathConstants.NODESET);
+		System.out.println(abstractNodeList.getLength());
+
+		for (int k = 0; k < abstractNodeList.getLength(); k++) {
+            // Node node = abstractNodeList.item(k);
+			// Element e = (Element) node;
+			// String doc_abstract = e.getTextContent();
+			// System.out.println("Abstract" + doc_abstract);
+			// ScientificDocumentPart abstractPart = new ScientificDocumentPart(dd.getId(), doc_abstract, "", counter, counter+doc_abstract.length(), doc_abstract, "abstract");
+			// dd.addPart(abstractPart);
+			// counter = counter + doc_abstract.length() + 1;
+			// wholeText = wholeText + " " + doc_abstract;
+
+            Node node = abstractNodeList.item(k);
+			Element e = (Element) node;
+            NodeList heads = e.getElementsByTagName("head");
+			String text = "";
+        	for (int j = 0; j < heads.getLength(); j++) {
+                Node head = heads.item(j);
+				Element head_element = (Element) head;
+				text = text + " " + head_element.getTextContent();
+			}
+            NodeList ps = e.getElementsByTagName("p");
+        	for (int j = 0; j < ps.getLength(); j++) {
+                Node p = ps.item(j);
+				Element p_element = (Element) p;
+				text = text + " " + p_element.getTextContent();
+				//System.out.println(p_element.getTextContent());
+			}
+			text = text.trim();
+			ScientificDocumentPart qdp = new ScientificDocumentPart(dd.getId(), text, "", counter, counter+text.length(), text, "abstract");
+			dd.addPart(qdp);
+			counter = counter + text.length() + 1;
+			wholeText = wholeText + " " + text;
+
+		}
+		// System.out.println(bib.getKeywords());
+		/**
+		 * TODO include keywords
+		 */
+		/**
+		 * Code to get the AUTHORs
+		 */
+		// List<Person> persons = bib.getFullAuthors();
+		// if (persons!=null){
+		// 	for (Person person : persons) {
+		// 		System.out.println(person.toString());
+		// 		// ScientificAuthor sci = new ScientificAuthor("http://scilake-project.eu/res", person);
+		// 		ScientificAuthor sci = new ScientificAuthor(dd.getId(), person);
+		// 		System.out.println(sci.toJSON());
+		// 		authors.add(sci);
+		// 	}
+		// 	dd.setAuthors(authors);
+		// }
+
+		String expression = "//body/div";
+		NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
+		System.out.println(nodeList.getLength());
+
+		String current_category = "introduction";
+		for (int k = 0; k < nodeList.getLength(); k++) {
+            Node node = nodeList.item(k);
+			Element e = (Element) node;
+            NodeList heads = e.getElementsByTagName("head");
+			String title = null;
+			String number = null;
+			String text = "";
+        	for (int j = 0; j < heads.getLength(); j++) {
+                Node head = heads.item(j);
+				Element head_element = (Element) head;
+				number = head_element.getAttribute("n");
+				title = head_element.getTextContent();
+
+				for (String key : sections.keySet()) {
+					List<String> variants = sections.get(key);
+					if(variants.contains(title.trim().toLowerCase())) {
+						current_category = key;
+						break;
+					}					
+				}
+			}
+            NodeList ps = e.getElementsByTagName("p");
+        	for (int j = 0; j < ps.getLength(); j++) {
+                Node p = ps.item(j);
+				Element p_element = (Element) p;
+				text = text + " " + p_element.getTextContent();
+				//System.out.println(p_element.getTextContent());
+			}
+			text = text.trim();
+
+	    	Label l = new Label();
+			l.add("dfki:ScientificDocumentSection", current_category);
+			// l.add("taIdentRef", "http://dbpedia.org/resource/Berlin");
+			ScientificDocumentPart qdp = new ScientificDocumentPart(dd.getId(), title, number, counter, counter+text.length(), text, "section");
+			qdp.addLabel(l);
 			dd.addPart(qdp);
 			counter = counter + text.length() + 1;
 			wholeText = wholeText + " " + text;
