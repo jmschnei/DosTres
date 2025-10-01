@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Energy transitions in small-scale regions -What we can learn from a regional innovation systems perspective</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2014-12-23">23 December 2014</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Jannika</forename><surname>Mattes</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Institute for Social Sciences</orgName>
+								<orgName type="institution">University of Oldenburg</orgName>
+								<address>
+									<addrLine>Ammerländer Heerstr. 114-118</addrLine>
+									<postCode>D-26111</postCode>
+									<settlement>Oldenburg</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Andreas</forename><surname>Huber</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="institution">EIFER -European Institute for Energy Research</orgName>
+								<address>
+									<addrLine>Emmy-Noether-Strasse 11</addrLine>
+									<postCode>D-76131</postCode>
+									<settlement>Karlsruhe</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jens</forename><surname>Koehrsen</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">Center for Religion, Economy, and Politics</orgName>
+								<orgName type="institution">University of Basel</orgName>
+								<address>
+									<addrLine>Am Heuberg 12</addrLine>
+									<postCode>4051</postCode>
+									<settlement>Basel</settlement>
+									<country key="CH">Switzerland</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">H</forename><surname>I G H L I G H T S</surname></persName>
+						</author>
+						<title level="a" type="main">Energy transitions in small-scale regions -What we can learn from a regional innovation systems perspective</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2014-12-23">23 December 2014</date>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1016/j.enpol.2014.12.011</idno>
+					<note type="submission">Received 17 April 2014 Received in revised form 4 December 2014 Accepted 8 December 2014</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2024-01-25T08:40+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Energy transitions Cities Regional innovation systems</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>We highlight the importance of spatial and regional aspects for transitions. We draw upon regional innovation systems' subsystems to describe energy transitions. We show how actors and institutions interact in and coordinate transition processes. We present evidence from two small-scale regions in Germany: Emden and Bottrop.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Numerous contributions have dealt with decarbonisation, decentralisation and the resulting shifts in politics and society as central elements in energy transition processes <ref type="bibr" target="#b43">(Markard et al., 2012)</ref>. In this context, several of the dominant theories, such as the Multi-Level-Perspective (MLP), the Technological Innovation Systems (TIS) approach and also strategic niche management, have been criticised for not sufficiently addressing spatial issues. This criticism refers particularly to the processes of transition at the local level <ref type="bibr" target="#b13">(Coenen et al., 2010;</ref><ref type="bibr" target="#b47">McCauley and Stephens, 2012;</ref><ref type="bibr">Truffer and Coenen, 2012)</ref>. The lack of attention to this level is surprising given the significant differences that characterise local energy transitions <ref type="bibr" target="#b19">(Coutard and Rutherford, 2010;</ref><ref type="bibr" target="#b55">Rutherford and Coutard, 2014)</ref>. While some cities and regions are strongly committed to becoming pioneering energy regionsfor instance "low carbon" and "smart" cities or "100% renewable energy regions"others remain reserved. Most literature in the debate on sustainability transitions addresses the deployment of specific technologies (e.g. wind and solar energy, <ref type="bibr" target="#b35">Jacobsson and Bergek, 2004;</ref><ref type="bibr">biogas, Raven and Geels 2010)</ref>. The complex, local, institutional change processes which sustain (or hinder) individual projects are only rarely analysed. There is thus a need to explore local energy transition processes in a more comprehensive way by taking into account the diversity of actors and the different subsystems involved. The objective of this paper is to contribute to such a better understanding of local energy-related reorganisation processes, regarding both energy generation and demand.</p><p>Sustainable energy transitions can be defined as encompassing socio-technological transformation processes leading to low-carbon patterns of energy production, supply and consumption <ref type="bibr" target="#b10">(Cherp et al., 2011;</ref><ref type="bibr" target="#b19">Coutard and Rutherford, 2010;</ref><ref type="bibr" target="#b67">Verbong and Geels, 2007)</ref>. In order to enhance our understanding of these E-mail address: jannika.mattes@uni-oldenburg.de (J. <ref type="bibr">Mattes)</ref>.</p><p>Energy Policy 78 <ref type="bibr">(2015)</ref>  <ref type="bibr">[255]</ref><ref type="bibr">[256]</ref><ref type="bibr">[257]</ref><ref type="bibr">[258]</ref><ref type="bibr">[259]</ref><ref type="bibr">[260]</ref><ref type="bibr">[261]</ref><ref type="bibr">[262]</ref><ref type="bibr">[263]</ref><ref type="bibr">[264]</ref> processes at the local level, we draw upon ideas from the literature on regional innovation systems. Based on this evolutionary and institutional approach, we suggest distinguishing between various subsystems (science, politics, public administration, industry, finance, intermediaries and civil society) to capture the full complexity and interactive nature of the involved changes. We understand transitions as the outcome of the interaction of these institutional subsystems. Our question is: How do the various subsystems trigger, push or hinder regional change, and how do they interact with each other in local energy transition processes?</p><p>This paper analyses these questions based on empirical evidence from two local energy transition processes. It is structured in the following way. Section 2 introduces small-scale regions as a key level of transitions and shows how RIS subsystems can be used to enhance our understanding of small-scale regional change. Section 3 outlines the methodology. The main section of the paper (Section 4) presents case study results from the German cities of Bottrop and Emden. We provide a brief picture of individual and organisational actors and institutions that make up each of the introduced subsystems, and then present findings on characteristic interactions patterns for both cases. Subsequently (Section 5), we compare the results from the Emden and Bottrop case studies in terms of four analytical dimensions. The paper finishes with a brief conclusion.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Small-scale regions as a key level in understanding transitions</head><p>Energy is a topic that cannot be assigned to a single spatial scale. "(A)ctors and institutions at multiple spatial levels interact to create 'spaces for innovation'", as <ref type="bibr">Raven et al. (2012: 64)</ref> observe. This multi-spatial engagement resembles a "multi-territorial approach" to innovation <ref type="bibr">(Heidenreich et al., 2012: 267)</ref> and implies significant interconnectivity <ref type="bibr">(Truffer et al., 2012)</ref>. Despite this observation, transition theory still appears under-theorised regarding how different spatial levels shape transition processes and how these interact with each other (cf. also <ref type="bibr" target="#b54">Raven et al., 2012)</ref>.</p><p>As spatial issues inherently shape transitions, it is furthermore crucial to focus on particular spatial levels to better understand the inherent spatial dynamics <ref type="bibr" target="#b32">(Hodson and Marvin, 2010)</ref>. In the emerging debate in economic geography that does adopt a spatial perspective, the chosen level of analysis usually is national <ref type="bibr" target="#b54">(Raven et al., 2012)</ref>. However, this paper instead focuses on the smallscale regional level. The choice of this level of analysis is based on several considerations. First, there are clear indications of the growing importance of the small-scale, the regional and the local levels in energy transformation <ref type="bibr" target="#b32">(Hodson and Marvin, 2010;</ref><ref type="bibr" target="#b47">McCauley and Stephens, 2012;</ref><ref type="bibr" target="#b56">Schönberger 2013</ref>).<ref type="foot" target="#foot_0">1</ref> Municipalities are often the starting point of systemic transformations and have been characterised as "initial seedbeds for transition" <ref type="bibr">(Geels, 2011: 22)</ref>. Second, two trends from energy-related industries underline the importance of small-scale regions for energy transitions: there are increasingly decentralised small initiatives (singular windmills, photovoltaic installations on private homes etc.) that contribute to the production of renewable energy (cf. e.g. <ref type="bibr" target="#b48">McCormick and Kåberger, 2005)</ref>, and there is a growing empirical evidence on spatial clusters in clean-tech industries <ref type="bibr" target="#b47">(McCauley and Stephens, 2012;</ref><ref type="bibr" target="#b17">Cooke, 2010;</ref><ref type="bibr" target="#b9">Chapple et al., 2011;</ref><ref type="bibr" target="#b22">Fornahl et al., 2012)</ref>.</p><p>The lack of focus on spatiality is mirrored in the dominant debates on sustainability transitions. The MLP describes transformations as interplay between the three levels regime, landscape and niche <ref type="bibr">(Bijker et al., 1987;</ref><ref type="bibr" target="#b24">Geels, 2002</ref><ref type="bibr" target="#b25">Geels, , 2004</ref><ref type="bibr" target="#b26">Geels, , 2005;;</ref><ref type="bibr" target="#b41">Loorbach and Rotmans, 2006;</ref><ref type="bibr" target="#b67">Verbong and Geels, 2007)</ref>. These levels are regarded independently from spatial scales <ref type="bibr" target="#b32">(Hodson and Marvin, 2010)</ref>, although regimes are frequently attributed to the national level <ref type="bibr" target="#b54">(Raven et al., 2012)</ref>. The regime represents the dominant socio-technical configuration, which is stabilised by the interplay of existing material elements (technologies, infrastructures), social groups and actor networks as well as cognitive, normative and regulative rules. These regimes are embedded into landscapes, which are defined as "external", overarching elements such as global markets, geopolitical pressures or demographic evolutions. Niches are small-scale socio-technical arrangements in which different settingsalternative combinations of material elements, actors and rulesare tested <ref type="bibr" target="#b24">(Geels, 2002</ref><ref type="bibr" target="#b26">(Geels, , 2005))</ref>. Change occurs when the landscape evolves ("external" developments) and exerts pressure on the regime, and when bottom-up alternative solutions at the niche level challenge the dominant socio-technical configuration. Most of this change is incremental, i.e. the regime incorporates some elements of emerging niches without changing its fundamental rationales. Only in rare cases do windows of opportunity for radical change open, allowing system "lock-ins" to be overcome and leading to a realignment of the socio-technical regime <ref type="bibr" target="#b28">(Geels and Schot, 2007;</ref><ref type="bibr" target="#b68">Verbong and Geels, 2010)</ref>. Based on the general neglecting of spatiality, the MLP has not yet provided a systematic conceptual framework for concrete local conditions favouring the growth and spread of alternative socio-technical configurations <ref type="bibr" target="#b13">(Coenen et al., 2010;</ref><ref type="bibr" target="#b44">Markard and Truffer, 2008;</ref><ref type="bibr">Truffer and Coenen, 2012)</ref>, especially since the role of local action cannot be equated with niches <ref type="bibr" target="#b60">(Späth and Rohracher, 2010)</ref>. In this way, "classical" MLP contributions do not offer insights into how energy transitions are rooted in small-scale regions <ref type="bibr" target="#b32">(Hodson and Marvin, 2010)</ref>.</p><p>Similarly, TIS analysis is not focused on space, but concentrates on technological sectors. <ref type="bibr">Carlsson and Stankiewicz (1991: 93)</ref> define TIS as a "network of agents interacting in a specific economic/ industrial area under a particular institutional infrastructure or set of infrastructures and involved in the generation, diffusion and utilisation of technology. Technological systems are defined in terms of knowledge/competence flows rather than flows of ordinary goods and services. They consist of dynamic knowledge and competence networks." As TIS analysis focuses on interactive interplays between actors in different locations, it strives to include all the technologically relevant actors and conceptually explicitly avoids spatial restrictions <ref type="bibr" target="#b3">(Binz et al. 2014;</ref><ref type="bibr">Truffer et al., 2012)</ref>. The TIS approach does not consider the role of regions <ref type="bibr">(Truffer et al., 2012)</ref>. Instead, as <ref type="bibr" target="#b3">Binz et al. (2014)</ref> highlight, empirical analyses often implicitly interpret nation states as the natural size of TIS. 2  More recent contributions from strategic niche management and transition management (cf. e.g. <ref type="bibr" target="#b57">Schot and Geels, 2008;</ref><ref type="bibr" target="#b7">Caniëls and Romijn, 2008)</ref> acknowledge the importance of spatiality and particularly highlight the importance of small-scale analyses. Nevertheless, studies which are explicitly concerned with smallscale regions remain scarce (cf. however <ref type="bibr" target="#b27">Geels, 2011;</ref><ref type="bibr" target="#b52">Quitzau et al., 2012)</ref>. The strand of literature in transition theory which is most concerned with this aspect is the debate stemming from urban studies. Here, cities are regarded as particularly important sites for energy transitions <ref type="bibr" target="#b32">(Hodson and Marvin, 2010)</ref>, especially with regard to their strategic role in paving the path for transitions <ref type="bibr" target="#b19">(Coutard and Rutherford, 2010)</ref>. Several contributions have outlined the different roles that cities hold in transition processes <ref type="bibr">(Bulkeley et al., 2011;</ref><ref type="bibr">Hodson and</ref><ref type="bibr">Marvin, 2010, 2012)</ref>. <ref type="bibr">Hodson and Marvin (2012: 424)</ref> characterise cities as "an actor in its own right, a niche for experimentation to think about new ways of organising relationships between energy producers, consumers and flows through the city (or) a regime of existing relationships between energy producers, consumers and flows through the city", while <ref type="bibr">Geels (2011: 14)</ref> stresses that cities can either be primary actors, "seedbeds of national transitions" or play a limited role.</p><p>A commonality of most recent attempts to introduce a spatial perspective in transition theory is the attempt to reconcile spatiality with the still predominant frameworks of <ref type="bibr">MLP and TIS (cf. e.g. Geels, 2011;</ref><ref type="bibr">Hodson and Marvin, 2010 for MLP;</ref><ref type="bibr">Binz et al., 2014 for TIS)</ref>. However, these theories tell us little about how change is accommodated by diverse individual and organisational actors as well as institutions, how historical roles and relationships are redefined in mutual learning processes or how cognitive, organisational, social and geographic forms of proximity play a role <ref type="bibr" target="#b47">(McCauley and Stephens, 2012;</ref><ref type="bibr" target="#b13">Coenen et al., 2010</ref><ref type="bibr" target="#b12">Coenen et al., , 2012))</ref>. We suggest that insights from another strand of literature, namely regional innovation systems (RIS), may be highly beneficial in better understanding the complex dynamics of transformation processes. RIS theory can help to systematically capture all relevant spheres, their interplay and the occurring change processes.</p><p>Innovation systems present an integrated institutional and evolutionary approach to understanding innovation in precise geographical settings, drawing on economic, political and social analyses. Initially designed at the national level <ref type="bibr">(Lundvall, 1992)</ref>, this perspective was later also applied to the regional level <ref type="bibr" target="#b16">(Cooke, 2002;</ref><ref type="bibr" target="#b18">Cooke et al., 2004;</ref><ref type="bibr" target="#b0">Asheim and Isaksen, 2002)</ref>. In contrast to the national innovation systems approach, RIS theories also take into account tacit factors and not only codified assets <ref type="bibr" target="#b1">(Autio, 1998)</ref>. Even though an institutional bias remains, they hence provide room for considering elements that <ref type="bibr" target="#b62">Storper (1995)</ref> calls "untraded interdependencies"factors that all organisations of a region take for granted, such as labour markets, conventions, common languages andparticularly important for energyinfrastructure. Based on geographical concentration, RIS are crucial for an organisation's competitiveness: they provide "local collective competition goods" (Le <ref type="bibr" target="#b39">Galès and Voelzkow, 2001)</ref> and turn into networks of actors that are not only geographically but also socioculturally embedded and institutionally stabilised. In this sense, RIS are an appropriate framework to structure the relevant factors and actors that shape the energy transition in a particular region.</p><p>Summarising these elements, RIS are defined as systems "in which firms and other organisations are systematically engaged in interactive learning through an institutional milieu characterised by embeddedness" <ref type="bibr" target="#b14">(Cooke et al., 1998</ref><ref type="bibr">(Cooke et al., : 1581))</ref>. The levels of analysis include institutions as rules of the game; organisations as collective actors <ref type="bibr" target="#b14">(Cooke et al., 1998)</ref> and individual actors (cf. also <ref type="bibr" target="#b0">Asheim and Isaksen, 2002)</ref>. In recognition of the breadth of potentially relevant factors, RIS are not restricted to activities directly related to innovation, but also include factors which influence innovation indirectly, such as the regional economic structure, education system and political initiatives. In reference to energy transitions, this means that RIS depict both technological learning and the involved economic, political and social changes.</p><p>Referring to the different "spheres" which shape innovation, <ref type="bibr">Kuhlmann (2001: 958)</ref> argues that "the innovation system extends over schools, universities, research institutions (education and science subsystem), industrial enterprises (economic subsystem), the politico-administrative and intermediary authorities (political subsystem) as well as the formal and informal networks of the actors of these institutions (…)". More recent contributions <ref type="bibr" target="#b30">(Heidenreich et al., 2012;</ref><ref type="bibr" target="#b45">Mattes, 2010)</ref> summarise the relevant involved areas as the scientific subsystem (science and education), the industrial subsystem (companies which compete, cooperate with or supply each other), the political subsystem (municipalities, regional administration, political parties and related actors), intermediaries (mainly labour unions and chambers of commerce) 3 and the financial subsystem (funding schemes, venture capital and banks, etc). 4 Innovation emerges through the interplay of these subsystems. The interplay between different subsystems provides a useful starting point for understanding transformation processes in a specified area.</p><p>A couple of small adjustments of the RIS concept are necessary to make it applicable to the particularities of the energy sector. Most importantly, these refer to the involved subsystems. As households, farmers and cooperatives have become important actors in the energy transformation (cf. <ref type="bibr" target="#b23">Foxon et al. 2013;</ref><ref type="bibr" target="#b31">Heiskanen et al., 2009;</ref><ref type="bibr" target="#b46">Mautz et al., 2008;</ref><ref type="bibr" target="#b49">Middlemiss and Parrish, 2009;</ref><ref type="bibr" target="#b58">Seyfang and Smith, 2007)</ref>, we add "civil society" (NGOs and mobilised citizens) as an additional subsystem. Moreover, we subdivide the political subsystem into "political parties" and "public administration" to distinguish between political agendas and the day-to-day work of local government. This second amendment responds to the fact that policy assumes a different role in energy than it does in other sectors. Even though the energy market has become more privatised, policy still assumes a particularly strong role of a market organiser, e.g. by fixing prices, giving incentives for certain technologies etc. (cf. e.g. <ref type="bibr" target="#b36">Jacobsson and Lauber, 2006)</ref>. In this respect, the sector differs from sectors like automotive or pharmaceutics to which RIS is more commonly being applied. 5  Based on the insights of the RIS concept, this paper interprets small-scale transition processes as a conjunct of changes, decisions and bargaining processes occurring within and between the involved subsystems. Change may be triggered, pushed or hindered by either subsystem, and the interaction between them increases the necessity to coordinate. After introducing the methodology, the paper analyses two empirical cases to illustrate how the interactions between individual and organisational actors from different subsystems result in differing local energy transition processes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Methodology</head><p>When it comes to analysing innovation dynamics at the local level, multiple variables and interdependencies can be expected. Semi-structured, qualitative interviews are the most appropriate data collection method for capturing the complex and multi-layer character of local change processes. Thus, more than 30 interviews per region were conducted with representatives from different subsystems.</p><p>The selection of interview partners was designed considering a balanced perspective of all subsystems, i.e. with representatives of each of the different subsystems. However, due to specific circumstances in both Bottrop and Emden, some categories of actors 3 Intermediaries are regarded as particularly important for energy transitions.</p><p>Frequently they are defined as network agents, connectors, grid operators and other such actors (cf. e.g. <ref type="bibr" target="#b34">Hodson et al. 2013)</ref>. In contrast, RIS analyses usually refer to intermediaries as employer associations and labour unions which negotiate collective labour frameworks. We interpret intermediaries broadly as connecting organisations. Thus, acccording to our understanding, the subsystem of intermediaries stands out from the other subsystems due to its network character. However, for a systematic presentation of all involved actors, we outline the intermediary subsystem as one of seven subsystems. Its special characteristics will be addressed in the empirical analysis. 4 The financial subsystem is commonly neglected at the regional level, but frequently considered as relevant at the national level (cf. however <ref type="bibr" target="#b0">Asheim and Isaksen, 2002;</ref><ref type="bibr" target="#b15">Cooke, 2001)</ref>. 5 These amendments to the RIS concept are not exhaustive. Instead, depending on how the concept is being applied to energy, more changes may be needed in order to accommodate the specifities of the sector. For the present analysis, however, the two outlined adaptations of the subsystems are the most critical ones.</p><p>were more heavily represented in the sample, while others were revealed to be less relevant in the course of the empirical work. For instance, as industry is heavily involved in the innovation processes in Bottrop and Emden, there were more interviews in the economic category, while other subsystems (finance and civil society) were less represented.</p><p>The interviews took place between June and November 2012 and the duration of interviews ranged from 40 to 145 min. All interviews were conducted face-to-face, led by one or several of the authors. The interviews were based on a common interview guideline which broadly defined the conversation content. The interviews were structured around three main subject areas:</p><p>(1) an introduction to the interviewee's organisation and its history as well as activities and objectives in the energy field; (2) an exploration of the most important exchange relationships with other relevant organisations; and (3) an exemplary project was discussed in detail to illustrate the interactions between actors and subsystems. However, the focal point of the interviews was adapted to the specific expertise of the interviewee. 6  Concerning the interpretation of the data, a short note is necessary to the assignment of individual and organisational actors to the different subsystems. Of course, these subsystems are analytical ideal types and do not exist as such in the real world. In the empirical analysis, we will therefore assign actors to the subsystem that best represents their current activities. It is, however, possible for an actor to belong to several subsystems at a time (thereby merging two subsystems) or to shift between various subsystems in the course of time.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Subsystems and their interaction in two small-scale regions in Germany</head><p>In this section, we analyse empirical data from the case studies in Emden and Bottrop. Before doing so, we give a brief overview of the national policy framework in Germany to provide background information on small-scale transformation processes. Without aiming to analyse our cases as elements of the German multilevel governance system in the energy field, we fully recognise the multiple connections between the local, federal and Länder (state) level.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Germany's energy systemthe empirical context</head><p>Germany's Energiewende (energy transition) aims to continuously increase the share of renewable energy sources in energy supply, while gradually phasing out nuclear power and fossil energy sources, complemented by increased energy efficiency (for a more detailed overview on the Energiewende see <ref type="bibr" target="#b6">Buchan, 2012)</ref>. Its origins date back to 1991, when the German government passed the "Stromeinspeisungsgesetz" (feed-in act), a predecessor of the Erneuerbare Energien Gesetz (EEG; Renewable Energy Act). The Renewable Energy Act from 2000 guaranteed fixed feed-in tariffs to producers of renewable electricity over 20 year periods. Parallel to this, the former red-green government decided to gradually phase out nuclear power generation. The conservative-liberal administration <ref type="bibr">(2009)</ref><ref type="bibr">(2010)</ref><ref type="bibr">(2011)</ref><ref type="bibr">(2012)</ref><ref type="bibr">(2013)</ref> first revised this decision in 2010, but, following the Fukushima disaster and under strong pressure from the German public, the government confirmed an end to nuclear energy by 2022 and the importance of renewable energies. In 2014, the Renewable Energy Act was reformedmost importantly annual caps were defined for additional PV, wind and bioenergy capacity and direct marketing was strengthened to limit the increase of the RES surchargebut the objective of expanding the RES power supply remains unchanged <ref type="bibr" target="#b29">(Graichen, 2014;</ref><ref type="bibr">cf. Pregger et al., 2013</ref> for possible development scenarios). For the first time, the government set quantified objectives for the increase of RES in final electricity consumption <ref type="bibr">(40-45% in 2025, and 55-60% in 2035)</ref>. The outlined political transition process was backed up by multiple local initiatives that can be regarded as constitutive for the national change <ref type="bibr" target="#b20">(Dewald and Truffer, 2012;</ref><ref type="bibr" target="#b46">Mautz et al., 2008)</ref>. In this sense, the German Energiewende was from the very beginning a highly decentralised phenomenon.</p><p>The public support schemes have boosted renewable energy production in Germany, which accounted for 25.4% of the German final electricity consumption in 2013, compared to less than 7% in 2000 (BMWI, 2014). Germany's Renewable Energy Act has often been described as a success story that has been replicated by many other governments (cf. also <ref type="bibr" target="#b11">Chowdhury et al., 2014)</ref>, and it can be argued that renewables in Germany have left the niche status <ref type="bibr" target="#b63">(Sühlsen and Hisschemöller, 2014)</ref>. However, beyond this generally increasing importance of regional activities <ref type="bibr" target="#b20">(Dewald and Truffer, 2012)</ref>, the picture is not uniform within Germany. The prevailing technology differs greatly between the German regions, with wind energy dominating in northern parts of Germany and PV in the south (BDEW, 2014). One major shift in the energy system has been the empowerment of citizens, cooperatives and farmers who have strongly responded to the policy incentives. With around 45% of ownership in 2012, this group of actors holds a large proportion of RES installations <ref type="bibr" target="#b64">(TrendResearch, 2014)</ref>. This indicates the importance of decentralisation for Germany's energy system and makes it worthwhile to look into particular localities, as we will do by presenting the cases of Emden and Bottrop.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">The Emden case study</head><p>Emden is a small harbour city of around 50,000 habitants located in East Frisia (Ostfriesland) in north-west Germany. Belonging to a region in which "renewable energy is (…) positioned quite firmly" (F2)<ref type="foot" target="#foot_2">7</ref> , Emden's economy experienced a radical transformation through the decline of its historic shipbuilding economy and the emergence of new wind energy businesses. Additional context factors that have shaped Emden's energy transition are the powerful position of the social democratic party (SPD) and the low economic competition in the local energy supply market. Facing little competitive pressure, central actors from the industrial and political subsystems were able to act in a "protective space" experimenting with new energy configurations. Thus, in 1987, the municipal utility company (Stadtwerke) -Emden's main energy supplierinstalled the first windmill to power the local water works. In the early 1990s, the public utility company reoriented its business by constructing its first wind farm and launching energy saving campaigns. In 2003, Emden participated in the European Energy Award programme and in 2008 it joined the Climate Alliance. In the course of these projects, the city set its climate targets: a 10% reduction in CO 2 emissions every five years and cutting 50% of its total CO 2 emissions by 2030 compared to 1990 levels <ref type="bibr" target="#b61">(Emden, 2010)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.1.">Introduction to the subsystems</head><p>The first clearly observable steps in reshaping Emden's energy legacy were initiated in the political subsystem. Traditionally, the SPD has held an absolute majority of seats in the city council and 6 All conversations were recorded and then transcribed for data analysis. Using MAXQDA software, the interview transcriptions were subsequently coded according to analytical categories ("codes"), allowing for a systematic and thorough analysis of selected research issues.</p><p>appoints the mayor. In order to spur on the city's economy and create jobs, policy makers sought to create positive conditions for attracting companies from the emerging wind energy sector. Through their votes, deputies paved the way for numerous energyrelated projects, for instance the first wind farm in Emden. Emden's ex-mayor was an important facilitator and connector in the local energy transition processes. By using his personal networks, he supported companies, which in return located and/or expanded their wind energy business in Emden.</p><p>The local political support and the EEG framework on the national scale encouraged a transformation process in the industrial subsystem. Businesses increasingly recognised the wind energy sector as an economic opportunity (D2). New companies thus emerged in the off-and onshore wind sector, while a number of traditional companies reoriented their business models accordingly. For example, a big shipbuilding company became a producer of tripod foundations for offshore wind turbines. However, these businesses mainly operate on the national and international scale and have influenced local change processes only indirectly. Since they "create a lot of value" (B2), they have strengthened the commitment to renewable energy in Emden. The municipal utility company and a local wind energy consultancy have more directly shaped Emden's transition processes. Both are closely linked through intensive personal contacts and joint projects. For instance, they built wind and solar farms in and around Emden, launched campaigns to increase people's awareness of their energy consumption and organised energy exhibitions. Interviewees from all subsystems stress the utility company's crucial role in Emden's energy transition. The company aims to double its wind power capacity by 2020 and to supply Emden with 100% renewable energy sources by 2030 (A1). In order to balance out grid fluctuations, it also plans to invest in smart grid and (wind-) power-to-gas technology and encourages private households to save energy.</p><p>A third subsystem that has played a crucial role is the public administration, more specifically the department of urban development, which includes an environmental division. Amongst others, this department spearheaded Emden's participation in the European Energy Award programme and membership in the Climate Alliance. It also promoted energy-efficient refurbishments and launched an extensive programme to encourage cycling. Frequently, projects were developed bottom-up: experts from the city administration developed the concept, built coalitions withinand sometimes beyondthe city administration and sought political approval. In addition, the city administration supported activities of othermainly industrialactors with advice and efficient approval procedures.</p><p>Unlike the three aforementioned subsystems, the scientific subsystem only recently started to play an important role in Emden's energy transition. During its reorientation process in 2009, the local university of applied sciences made energy a central pillar of its strategic agenda. Today, it provides scientific knowledge and expertise to various local actors in the field of energy, for instance to companies striving to become energy autonomous. Moreover, the university offers a bachelor's curriculum in "energy efficiency" and hosts an offshore wind energy exhibition.</p><p>Intermediary actors such as the chamber of commerce and different business networks are also involved in the local reorganisation processes. For instance, they offer training programmes to companies and organise energy efficiency roundtables. However, so far no central intermediary organisation for coordinating energy related projects has emerged in Emden.</p><p>Civil society actors also assume an educational role. Environmental NGOs (e.g. Greenpeace), Emden's Environmental Centre and the "citizens' initiative for clean air" point to currently unsustainable patterns of energy consumption and production and act as watchdog, for instance by opposing to plans for a new coal power plant at Emden's coastline.</p><p>Finally, local banks (financial subsystem) support private projects by offering specific loans for energy-efficient refurbishments and the installation of solar panels.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.2.">Emden's energy transition as an informal and loosely coupled coordination process</head><p>Emden's energy transition can be characterised as a loosely coordinated transformation process, dominated by actors from the political, industrial and public administration subsystems. Interaction patterns in the local energy transition system are marked by the following two specificities.</p><p>First, Emden's energy transition has so far mostly taken place in informal and personalised networks of actors from different subsystems. Thus, one interviewee points out that "personal contacts are very, very important" and adds that "(…) those persons who are (…) involved in the projects (…) are very closely linked" (H1). The structure of Emden as a "city of short ways" (G2) where actors meet regularly appears to facilitate the development of an "uncomplicated working environment" (D2) marked by informal rather than formal relationships. Until 2011, three key actors, linked by strong personal ties, formed the core group of local networks (cf. also <ref type="bibr" target="#b37">Klagge and Brocke, 2012)</ref>: (1) Emden's ex-mayor, (2) the CEO of the public utility company and (3) the CEO of the wind energy consultancy. Each of these actors assumed a specific role in the implementation of important local projects: political supporter (power), innovator (ideas) and implementer (planning and financing). They planned projects in an emergent way without setting long-term goals for the local energy transition. When necessary, they involved actors from other subsystems such as Emden's Environmental Centre, banks, the university and the chamber of commerce by drawing on their excellent personal contacts. Thus, these three key persons assumed a strong coordinative role in local energy projects.</p><p>Parallel to this process, other local individuals and organisations such as the car manufacturing site implemented their individual projects, sometimes loosely coupled to the core group, sometimes totally independent from it. With a rising number of intervening actors and the retirement of the three key individuals, Emden's energy transition is increasingly turning into a decentralised multi-polar system in which different sub-structures coexist and develop their individual transition agendas.</p><p>Second, as a central coordination structure is missing, there have been efforts to create formal coordination structures. Thus, the development of an integrated municipal climate protection plan (Integriertes Kommunales Klimaschutzkonzept; Emden, 2010) defines clear objectives, details measures to achieve these and commits local actors to act accordingly. The second example of increasing formalisation is the recently created position of a climate manager who will be in charge of coordinating activities in different subsystems. Finally, intermediaries such as the Chamber of Commerce and the Climate Centre North have created formal networks of actors. However, it is not clear whether these frameworks will be sufficient to coordinate all relevant subsystems and actors.</p><p>Overall, Emden's energy transition is still characterised by informal, personalised relationships between actors from different subsystems. The lack of central coordination favours poly-centric transition processes in which subsystems are loosely coupled through exclusive circles of local elites.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.">The Bottrop case study</head><p>Bottrop is situated in the greater metropolitan region of the Ruhr area, which used to be the industrial heart of Germany. It shares a history of steel production and coal mining with other major cities in the region such as Dortmund, Essen, Duisburg and Bochum. Despite the declining competitiveness of Ruhr coal, around 6000 people are still employed in Bottrop's remaining operational coal mine, and, according to the experts interviewed, another 2000 jobs depend indirectly on coal extraction. This last coal mine will be closed in 2018, also bringing an end to coal business in the Ruhr area as a whole.</p><p>Given these circumstances, the city of Bottrop started a restructuring process relatively early, reshaping its legacy in the energy field without radically abandoning it. From the mid-1990s onwards, the city has developed and expanded its municipal energy management for public buildings, which involved the appointment of an energy manager, the evaluation of the status quo in annual energy reports and long term strategic planning for future measures. In 2010, the city was awarded the title 'Innovation City Ruhr' (IC) in a competition run by Initiativkreis Ruhr, a nonprofit organisation of 70 large industrial companies from greater Ruhr area which aims to foster structural change in the region. In its vision for the IC Ruhr contest, Bottrop proposed the transformation of a complete city area, comprising around 70,000 residents, businesses and industrial zones. It set itself the ambitious objective of cutting its CO 2 emissions by 50% from the 2010 level before the year 2020 and envisioned itself as a role model for other cities. To reach this goal, the city has planned over 120 projects covering the areas of urban planning, housing, industry, tertiary buildings and transport.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.1.">Introduction to the subsystems</head><p>Our data indicates that Bottrop's early energy change from the mid-1990s onwards mainly originated from long-term informal personal relationships within the public administration, namely the local Departments for Urban Planning, Urban Renewal, Environment and Greenery, and Economic Development. Thus, representatives from different departments report that a "dense communication structure" (T1) and "uncomplicated exchange forms" (Y2) beyond formalised rules have created a pragmatic, solution-oriented working environment where colleagues "complement each other and do not see each other as competitors" (Y1) and "think in similar directions" (Y2). This climate of mutual trust and collaboration and the resulting enthusiastic, personal commitment of staff members are presented by interviewees as key factors in the successful application as IC.</p><p>In contrast to the public administration, the political subsystem has performed a surprisingly passive role. Since the end of World War II, Bottrop's City Council has been mostly dominated by a sort of "informal big coalition" between the strongest Social Democratic Party and the biggest opposition party, the Christian Democratic Party. The partners of this informal big coalition, explained by representatives as patriotically motivated ("Bottrop pragmatism" (P)), seem to have acted as "willing enablers" of the local energy transformation. Rather than themselves pushing for local energy changes, policy makers have merely provided stability for action ("Planungssicherheit") by approving initiatives suggested by city departments. Having said that, many interviewees highlight the importance of today's mayor, whose charismatic and persuasive personality helped to ally most city stakeholders behind the IC application, which is said to be "his baby" (S). Furthermore, the strong support by prominent policy makers at the Land and federal levels is presented as crucial for the acquisition of funding and insider information.</p><p>Following the grant of the IC title, new actors have started to shape Bottrop's energy transition processes. The current dynamics are strongly influenced by a newly created intermediary organisation, Innovation City GmbH (Limited Liability Company), which is intended to coordinate the IC project. Counting on staff from Initiativkreis Ruhr and associated companies as well as the city's administration departments, its main strength is seen in combining urban planning expertise with private sector management experiences. With its specific unit ZIB (Centre for Information and Advice), IC Management GmbH is also an important access point for building owners seeking support for their refurbishment projects. In contrast, other intermediary organisations such as unions or employer associations do not seem to have shaped Bottrop's energy transition projects significantly.</p><p>The industrial subsystem has also gained importance in Bottrop's energy transition. Numerous companies contribute to individual IC projects, with manpower and investments in some cases reaching 10 staff members and several hundred thousand euros per year, very often as part of multi-stakeholder consortia. Enterprises aim to experiment with their technologies in new constellations and, not surprisingly, promote their image and products. Most of these companies are, however, not Bottropbased, such as E.ON, RWE-Effizienz, Emscher Lippe Energie, RAG (all energy companies), Bayer Material Science, Deutsche Rockwool (insulation industry), Vaillant, Viessmann, and Buderus (producers of heating appliances). This shows the embedding of Bottrop's RIS into Land and national contexts. In addition, a few local businesses punctually contribute to some IC activities, most importantly two housing companies. Two banks offer specific IC loans for homeowners. However, these have been met with only very modest demand according to the two interviewed representatives. In general, the role of the financial subsystem appears to be rather limited.</p><p>Science organisations are closely involved in the IC process. Three of them appear to be of particular importance: first, the Hochschule Ruhr West (University of Applied Sciences), most of all its Department of Energy Systems and Energy Economics, is involved in several smart buildings and grids projects; second, the Fraunhofer Institute for Environmental, Safety and Energy Technology (UMSICHT), located in the neighbouring city of Oberhausen, developed an ad-hoc assessment tool to evaluate new project ideas; and third, the Wuppertal Institute for Climate, Environment and Energy coordinates a network of 10-15 regional research institutions conducting ex-post analyses of specific aspects of Bottrop's transformation into a low-carbon city.</p><p>Finally, private households and farmers as well as one solar cooperative (civil society), have massively invested in PV and wind energy installations, mostly situated in the more rural parts of Bottrop. Environmental NGOs, such as the local divisions of Bund für Umwelt und Naturschutz (BUND) and Naturschutz Bund (NaBu), have only marginally been involved in the local energy innovation processes. This seems to be due to thematic priorities other than energy; at the same time, however, apparently only few attempts have been made to involve these stakeholders.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.2.">Bottrop's energy transition as a coordinated project of elites</head><p>Bottrop's development as IC up to the time of data collection can be characterised as an example of a highly coordinated, steered transformation, dominated by technical experts from IC Management GmbH, city departments, external companies and, to some degree, science institutions, while actors from other subsystems are only loosely linked to the interaction structures between these dominating stakeholders. The exchange patterns between the most influential subsystems are made up of three main organisational structures.</p><p>First, IC Management GmbH itself was created with the main objective of steering and coordinating activities. Our data suggests that its most important function is as a crossing point. The organisation helps to build bridges between different competence areas; it acts as a kind of "transmitter" between diverging organisational cultures and rationales of action, most importantly the industrial and the administration worlds. It also acts as "catalyser" when bottlenecks, for instance legal ones, hinder collaboration between the project partners. To enable efficient communication between IC Management GmbH and other stakeholders, some staff members were appointed as unique entry points for specific actor groups such as science partners, craft businesses and industries.</p><p>Second, many interviewees highlight the Friday project round table as a key place for spurring on project implementation. All responsible project leaders, both from the city administration and IC Management GmbH, heads of departments and representatives from the external partner companies meet on a weekly basis to discuss all ongoing IC projects. There is considerable evidence that one deliberate intention of this round table is to maintain pressure on all responsible partners to push forward with their projects. The weekly meetings create a feeling of urgency not to fall behind the agreed deadlines and provide regular proof of progress. Furthermore, the presence of all relevant persons, technical staff and hierarchical decision makers (heads of department, mayor, IC director), allows for instant decision making to overcome identified problems.</p><p>Third, a number of IC committees and advisory boards, which meet usually around four to six times per year, serve to discuss sector-specific issues, build new partnerships and project ideas responding to identified opportunities or shortcomings and reinforce the commitment of key decision makers from the involved sectors. They bring together one particular stakeholder group with experts from IC Management GmbH. The most important one among them seems to be the industry advisory board, which assembles high level representatives from the IC Ruhr member companies. Similar exchange platforms exist between IC Management GmbH and local craft businesses, banks, local entrepreneurs and housing companies. The Steering Committee is a somewhat different structure working between IC Management GmbH, the city administration and the City Council. It gathers together high-level staff, most importantly the IC Management GmbH director, the mayor and the deputy mayor, party representatives and technical staff in charge of individual projects. It meets when important issues need to be decided onfor instance financial affairsthat require political legitimisation by the City Council. It plays the role of an upfront "preparatory committee" (Y1), enabling the political decision makers to form their opinions on important topics in direct concertation with responsible "implementation actors".</p><p>Creating a combined effect, these organisational structures have favoured the development of dense, regular, formalised and informal relationships between important organisations and individuals from the subsystems of economy, public administration, politics and science. This network is centrally coordinated by the intermediary organisation IC Management GmbH. In contrast, other subsystems, most importantly the Civil Society -Bottrop's citizens, its associations and NGOs -, tend to be excluded from these structures. As the IC project aims to transform an urban area with 70,000 inhabitants currently living there, this is a particularly remarkable finding. Indeed, there have been attempts by the dominating actors of Bottrop's RIS to make citizens part of the IC project. IC Management GmbH has made huge efforts to increase public awareness of the project, for example through information events, leaflets circulated to households, exhibitions and even home visits. However, these activities all remained informational and citizens have had only little influence on the actual design and implementation of concrete projects. <ref type="foot" target="#foot_3">8</ref> This reflects the tendency to consider inhabitants as passive citizens, who need to become "activated" and "convinced" about pre-defined, expert-driven projects, rather than making them truly part of the project as active contributors, whose input and collaboration may benefit the projects. In a way, it seems that expertise can unintentionally create a barrier to the success of the IC project: "I think that the [employees of IC Management GmbH; authors' note] are working on a very professional level. (…) But this is also their problem. Just as an example: There was a public meeting where research institutes presented projects. There was one project about (…) problems in addressing residents with a migration background. (…) I was sitting next to a Bottrop resident who asked me: 'Mr. J [name of respondent; authors' note], is this a project with the idea of how to explain refurbishments to Turkish homeowners?' I replied: 'Yes, sounds like it.' (…) He answered: 'So why are they turning this into a project, why don´t they simply ask us?' So, this high level of professionalism, which surely is necessary to develop such large flagship projects, (…) may be a disadvantage for explaining to miners how to refurbish their façade." (J)</p><p>The "future house projects" illustrates this finding. Three buildings were refurbished to plus-energy standards to demonstrate the combined performance of forerunner products, materials and expertise from a plethora of different companies (insulation industry, heating appliances producer, utilities, control and metering system providers, architectural planning offices…). While the buildings may set new technological standardsplusenergy renovations are presented as being unique worldwideand hence create excellent public visibility for the involved companies, it is doubtful whether they will indeed serve as models that can easily be replicated by typical homeowners in Bottrop. Critical observers would have preferred a less prestigious project that takes into account the financial situation of "ordinary people". It is fair to assume that stronger citizen participation would have resulted in more pragmatic, affordable solutions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Discussion: energy transition as flexible interplay between subsystems</head><p>Both case studies indicate that local energy transitions consist of complex, multidimensional change processes involving a variety of stakeholders from different subsystems. Based on deliberative or emergent strategies <ref type="bibr" target="#b50">(Mintzberg, 1994)</ref>, a growing number of actors from various subsystems participate in the energy transition processes in both municipalities. However, the roles they assume differ between the cases. This refers to diverging patterns of interaction and coordination between the actors of the subsystems. Individual characteristics of the two cities (e.g. historical evolution, physical distances within the locality) further shape local activities. Table <ref type="table">1</ref> summarises key characteristics of the two empirical cases which we will outline in the following. The classification can be regarded as ideal-typical, as the different features exist to a certain degree in both places and in practice overlap and interfere with each other.</p><p>We found that the origin of interaction within and between subsystems tends to be informal. Interviewees from both cities emphasise the importance of informal, personal networks that have contributed to a dynamic evolution in both regions. In Emden, the interaction is almost exclusively based upon informal ties and seems to be working very well. Only the retirement of several key actors shows the fragility of a system which is exclusively based on informal links and highlights the importance of formal structures providing stability and continuity. In Bottrop, more formal interaction mechanisms are in place without disabling an efficient informal exchange.</p><p>Regarding coordination, we found evidence of increasingly organised and centralised forms of coordination between the different subsystems in both cities. 9 This results from a growing number of actors intervening in both cities and the increasing number of complex projects requiring collaboration between various stakeholders. Thus, both cities set objectives for cutting greenhouse gas emissions and committed themselves to developing common municipal action plans within the framework of the European Energy Award. However, the attempts at formalisation in Emden still remain rather cautious, and there is no officially coordinating entity so far. Compared to Emden, Bottrop exhibits more elements of formalised coordination. Most importantly, a completely new organisation -IC Management GmbHwas created, which has the explicit task of coordinating energy projects. Furthermore, the Friday project round table is a regular exchange body where important day-to-day decisions are taken. Finally, several committees strengthen the ties between IC Management GmbH and specific subsystems.</p><p>A striking result is that, despite its coordinated and centrally planned set-up, the transition process in Bottrop is not fully inclusive. Instead, the coordination power is concentrated in the hands of just a few actors from a small number of subsystemsintermediary IC Management GmbH, city departments and involved companies -, while other subsystemsmainly citizenstend to be excluded from the centrally coordinated activities. This is even more striking since the planned activities directly affect the citizens living in the project area, and the process could surely benefit from a more inclusive setup. Contrarily, the informal, rather uncoordinated setup in Emden does not systematically exclude any subsystem. 10 Nevertheless, specific subsystems such as the citizen subsystem are only marginally involved in the core activities. Even though the three leading individuals mainly connect the three subsystems of politics, public administration and industry, the other subsystems initiate their own activities, which find their place in Emden's rather open and loosely coupled local setup. At the same time, even in the decentralised setting in Emden, the process is mainly shaped by selected elites.</p><p>Finally, Emden's energy transition can be characterised as an emergent evolutionary process. Without following a planned or deliberate strategy, certain activities emerged and together triggered a local change process. In Bottrop, the ongoing change is far more deliberate, strategically planned and strategically governed. From the very beginning, Bottrop's Innovation City project has been conceived as a multi-stakeholder concerted action, while Emden has never given such an explicit definition to its activities. In sum, despite the presence of a common national framework, two highly different transition processes have evolved in the two cities.</p><p>Looking back at the interaction between the subsystems and the roles assumed by actors from different subsystems in energy transition processes, we can conclude that there are no fixed and set constellations. While studies have indicated the importance of political backup in transition processes (e.g. <ref type="bibr" target="#b11">Chowdhury et al., 2014)</ref>, we find that besides the political subsystem, other subsystems initialise and push change: the city administration and the intermediary IC Management GmbH take the leading role in Bottrop, while a triangle of individual actors drives the change processes in Emden. Even though political aims remain important, the public administrations and other local actors play a highly important role in the translation of these aims into actions. Our finding that in both cities the leading actors span various subsystems illustrates the importance of strategic collaborations in energy transition processes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Conclusion: subsystem analysis to understand energy transitions</head><p>In this paper we have analysed local energy dynamics, drawing on ideas from the Regional Innovation Systems approach. In this sense, we understand the complex socio-technological change processes as an outcome of the interaction of several subsystems: the industrial, financial, political, administrative, scientific, civil society and the intermediaries' subsystems. We have shown that the involved subsystems can take on various roles, and that from case to case different subsystems may push transition processes. Moreover, the interaction patterns between the involved subsystems are likely to vary from locality to locality. Our empirical evidence illustrates two different systemic setups: an informal, polycentric, loosely coupled and emergent network of actors in Emdenand a comparatively formalised, routinised, centralised, coordinated and strategically planned system in Bottrop. It is striking that despite their obvious differences, both transition processes are perceived to be successful by the involved actors, which reflects how regional transitions evolve in highly different ways. Therefore, analysing subsystem interactions and the systemic interrelatedness of actors and their projects can enhance our understanding of regional energy transition processes <ref type="bibr" target="#b5">(Bridge et al., 2013)</ref>.</p><p>Based on the analysis of these subsystem interactions, we have gained a clearer picture of the actual processes leading to energy transitions. The plurality of subsystems involved highlights the fact that policy makers have only a limited influence on the occurring changes. The RIS perspective also illustrates that actor groups spanning several subsystems strongly shape change processes in small-scale regions.</p><p>For policy makers, the introduced RIS-based approach offers a new perspective which can help with analysing regional transition processes and the involved individual and organisational actors as well as institutions in more depth. Analysing subsystems and their interactions allows for a more comprehensive understanding of Table <ref type="table">1</ref> Characteristics of subsystems and their interaction in Emden and Bottrop.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Emden Bottrop</head><p>Interaction Informal, personal relationships (strong ties); some initial attempts at formalisation</p><p>Historically strong importance of informal, personal relationships; recently growing formalisation (committees, roundtable) Coordination Loosely organised core of key actors, development towards multi-polar system (with some initial attempts at more central coordination structures)</p><p>Centralistic form of integration, IC Management GmbH as crossing point for most activities Inclusiveness Activities dispersed between most subsystems with some power concentrations among local elites</p><p>Power concentrated within a few expert-driven subsystems, exclusion of others Evolution Historically emergent transformation processes without long-term planning, recently some elements of strategic planning Strategic; increasingly steered and planned energy transition 9 Cf. also <ref type="bibr" target="#b34">Hodson et al. (2013)</ref> for a study on the organisation of low carbon changes in London and Manchester.  10 This is in line with the fragmented activities from all parts of society which are involved in transition processes according to <ref type="bibr" target="#b21">Florini and Sovacool (2009)</ref>.</p><p>the ongoing change processes. In practice, it is important to involve all the affected subsystems and to strategically consider the role that actors may play in pushing, hindering or supporting regional transition processes. At the same time, our analysis shows that it is likely (although maybe not advisable) that fundamental changes are implemented by some dominating subsystems while one or several subsystems remain excluded. This is particularly surprising regarding the role of citizens, who have been identified as important actors of bottom-up driven transition processes elsewhere ("grassroots initiatives") <ref type="bibr" target="#b58">(Seyfang and Smith, 2007)</ref>. However, as our data is based only on a few interviews with actors from this subsystem, our findings have to be interpreted with caution and should be complemented by further research. Moreover, it is important to note that neglecting citizens is likely to create resistances. In Emden, citizens' protests efficiently stopped the construction of a coal power plant, while criticisms of Bottrop's low citizen participation have contributed to the organisation of round tables to include citizens' voices in the development of the strategic IC Master Plan.</p><p>Another major insight for policy makers is the role of intermediaries. In contrast to the central position that is commonly ascribed to intermediary organisations <ref type="bibr" target="#b34">(Hodson et al., 2013)</ref>, the Emden case illustrates how informal and individual ties can substitute a formally established intermediary organisation. This finding implies that it is not necessary to rely upon big organisations, but that small and individual initiatives towards energy transition can likewise be successful in coordinating the typical "piecemeal" activities in energy transitions <ref type="bibr">(Florini and Sovacool, 2009: 5239)</ref>. Finally, the empirical examples show that political initiatives are important, but can likewise rely upon the strength and backhold from other subsystems to achieve a higher impact in their actions.</p><p>For the academic debate, the idea of drawing upon RIS analysis paves the way for further research on local and regional energy transitions. In this paper, we have illustrated two different types of systemic interaction by presenting two empirical cases. Based on this, it is very likely that additional empirical research in other regions would reveal further types and many mixed constellations. Therefore, further investigations may lead to a systematic classification of different constellations of regional energy transition processes and enhance our understanding of which factors shape these change processes. Regarding the theoretical framework, further research could also explore synergies with existing transition theories and their typologies of change (c.f. <ref type="bibr" target="#b28">Geels and Schot, 2007)</ref>. Finally, the analysis in this paper is centred on the regional level. As the described processes cannot be seen independently from supra-regional and especially national and European levels, systematic multi-level analyses of the interplay between different spatial levels appear highly relevant. How do these changes at the regional level feed back into change processes at the national or European level? It is hence crucial not to forget the embeddedness of the regional level in a multi-level system <ref type="bibr" target="#b59">(Smith, 2007)</ref>. As transitions take place in "complex societal systems" <ref type="bibr">(Loorbach, 2010: 177)</ref>, the subsystem approach may be a helpful tool to disentangle the relationships and interdependencies not only at the regional level, but also at the other involved levels.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head></head><label></label><figDesc>Contents lists available at ScienceDirect journal homepage: www.elsevier.com/locate/enpol</figDesc><table><row><cell>Energy Policy</cell></row></table><note>http://dx.doi.org/10.1016/j.enpol.2014.12.011 0301-4215/&amp; 2014 Elsevier Ltd. All rights reserved. n Corresponding author.</note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0">In the following, we will use the terms"regional" and"local" interchangable,</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1">J.Mattes et al. / Energy Policy 78 (2015) 255-264  </note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="7" xml:id="foot_2">Instead of naming the interview partner, we have asigned a combination of capital letters and numbers to the conducted interviews.J.Mattes et al. / Energy Policy 78 (2015) 255-264  </note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="8" xml:id="foot_3">It is important to note that this may have changed in the meantime. The recent development of a Master Plan, which will provide an overarching framework to the IC project, included several round tables for citizens aimed at integrating citizens' views into this strategic document.J.Mattes et al. / Energy Policy 78 (2015) 255-264  </note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>We would like to thank ADEME for the financial support of this research as part of the project COMPOSITE. We would also like to thank Markus Allbauer, Benoit Boutaud, Pauline Gabillet, Jonathan Rutherford, Bastian Hoffmann and the participants of the 2013 Eceee Summer Study for their comments on previous versions of this paper. We are also grateful to the editors and three anonymous reviewers for their very constructive comments which helped us to improve this paper.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Regional innovation systems: the integration of local &apos;sticky&apos; and global &apos;ubiquitous&apos; knowledge</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Asheim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Isaksen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Technol. Transf</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="77" to="86" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Evaluation of RTD in regional systems of innovation</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Autio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eur. Plan. Stud</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="131" to="140" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Bundesverband der Energie-und Wasserwirtschaft e.V, Berlin. The Social Construction of Technological Systems. New Directions in the Sociology and History of Technology</title>
+	</analytic>
+	<monogr>
+		<title level="m">Erneuerbare Energien und das EEG: Zahlen, Fakten, Grafiken</title>
+				<editor>
+			<persName><forename type="first">W</forename><forename type="middle">E</forename><surname>Bijker</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">T</forename><forename type="middle">P</forename><surname>Hughes</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">T</forename><forename type="middle">J</forename><surname>Pinch</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Cambridge, Mass</addrLine></address></meeting>
+		<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="2014">2014. 2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Why space matters in technological innovation systems-mapping global knowledge dynamics of membrane bioreactor technology</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Binz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Truffer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Coenen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Resm Policy</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="138" to="155" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Erneuerbare Energien auf einen Blick</title>
+		<ptr target="〈http://www.bmwi.de/DE/Themen/Energie/Erneuerbare-Energien/erneuerbare-energien-auf-einen-blick.html〉." />
+	</analytic>
+	<monogr>
+		<title level="j">BMWI</title>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note>last access: 23.09.14</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Geographies of energy transition: Space, place and the low-carbon economy</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Bridge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bouzarovski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bradshaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Eyre</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Energy Policy</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="331" to="340" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">The Energiewende -Germany&apos;s gamble. Working paper SP26, The Oxford Insitute for Energy Studies</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Buchan</surname></persName>
+		</author>
+		<ptr target="〈http://www.oxfordenergy.org/wpcms/wp-content/uploads/2012/07/SP-26.pdf〉." />
+		<imprint>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+	<note>last access 23.09.14</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Strategic niche management: towards a policy tool for sustainable development</title>
+		<author>
+			<persName><surname>London</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C J</forename><surname>Caniëls</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">A</forename><surname>Romijn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Technol. Anal. Strateg. Manag</title>
+		<editor>Bulkeley, H., Castán Broto, V., Hodson, M., Marvin, S.</editor>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="245" to="266" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+	<note>Routledge (Routledge studies of human geography</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">On the nature, function and composition of technological systems</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Carlsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Stankiewicz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Evol. Econ</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="93" to="118" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Innovation in the green economy: an extension of the regional innovation system model?</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Chapple</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Kroll</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">W</forename><surname>Lester</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Montero</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econ. Dev. Q</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="5" to="25" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Governing global energy: systems, transitions</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Cherp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Jewell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Goldthau</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">complexity. Glob. Policy</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="75" to="88" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Importance of policy for energy system transformation: Diffusion of PV technology in Japan and Germany</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chowdhury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Sumita</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Islam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Bedja</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Energy Policy</title>
+		<imprint>
+			<biblScope unit="volume">68</biblScope>
+			<biblScope unit="page" from="285" to="293" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Toward a spatial perspective on sustainability transitions</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Coenen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Benneworth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Truffer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Res. Policy</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="968" to="979" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Local niche experimentation in energy transitions: a theoretical and empirical exploration of proximity advantages and disadvantages</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Coenen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Raven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Verbong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Technol. Soc</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="295" to="302" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Regional systems of innovation: an evolutionary perspective</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Cooke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">G</forename><surname>Uranga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Etxebarria</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Environ. Plan. A</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1563" to="1584" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Regional innovation systems, clusters and the knowledge economy</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Cooke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ind. Corp. Ch</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="945" to="974" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">Knowledge Economies: Clusters, Learning and Co-Operative Advantage</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Cooke</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002">2002</date>
+			<publisher>Routledge</publisher>
+			<pubPlace>London</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Regional innovation systems: development opportunities from the &apos;green turn</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Cooke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Technol. Anal. Strateg. Manag</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="831" to="844" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<author>
+			<persName><forename type="first">P</forename><surname>Cooke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Heidenreich</surname></persName>
+		</author>
+		<title level="m">Regional innovation systems: The Role of Governances in a Globalized World</title>
+				<editor>
+			<persName><forename type="first">H.-J</forename><surname>Braczyk</surname></persName>
+		</editor>
+		<meeting><address><addrLine>London</addrLine></address></meeting>
+		<imprint>
+			<publisher>UCL Press</publisher>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+	<note>second ed.</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Energy transition and city-region planning: understanding the spatial politics of systemic change</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Coutard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Rutherford</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Technol. Anal. Strateg. Manag</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="711" to="727" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">The local sources of market formation: explaining regional growth differentials in German photovoltaic markets</title>
+		<author>
+			<persName><forename type="first">U</forename><surname>Dewald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Truffer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eur. Plan. Stud</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="397" to="420" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Who governs energy? The challenges facing global energy governance</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Florini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">K</forename><surname>Sovacool</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Energy Policy</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="5239" to="5248" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">From the old path of shipbuilding onto the new path of offshore wind energy? The case of Northern Germany</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Fornahl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hassink</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Klaerding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Mossig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Schröder</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eur. Plan. Stud</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="835" to="855" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Branching points for transition pathways: assessing responses of actors to challenges on pathways to a low carbon future</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">J</forename><surname>Foxon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Pearson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Arapostathis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Carlsson-Hyslop</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Thornton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Energy Policy</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="page" from="146" to="158" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Technological transitions as evolutionary reconfiguration processes: a multi-level perspective and a case-study</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">W</forename><surname>Geels</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Res. Policy</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">8-9</biblScope>
+			<biblScope unit="page" from="1257" to="1274" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">From sectoral systems of innovation to socio-technical systems: insights about dynamics and change from sociology and institutional theory</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">W</forename><surname>Geels</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Res. Policy</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">6-7</biblScope>
+			<biblScope unit="page" from="897" to="920" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Processes and patterns in transitions and system innovations: refining the coevolutionary multi-level perspective</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">W</forename><surname>Geels</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Technol. Forecast. Soc. Ch</title>
+		<imprint>
+			<biblScope unit="volume">72</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="681" to="696" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">The role of cities in technological transitions. Analytical clarifications and historical examples</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">W</forename><surname>Geels</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Cities and Low Carbon Transitions</title>
+				<editor>
+			<persName><forename type="first">H</forename><surname>Bulkeley</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">V</forename><surname>Castán Broto</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Hodson</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">S</forename><surname>Marvin</surname></persName>
+		</editor>
+		<meeting><address><addrLine>London</addrLine></address></meeting>
+		<imprint>
+			<publisher>Routledge</publisher>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="page" from="13" to="28" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Typology of sociotechnical transition pathways</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">W</forename><surname>Geels</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">W</forename><surname>Schot</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Res. Policy</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="399" to="417" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Zehn Fragen und Antworten zur Reform des Erneuerbare-Energien-Gesetzes</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Graichen</surname></persName>
+		</author>
+		<ptr target="〈http://www.agora-energiewende.de/fileadmin/downloads/publikationen/Hintergrund/EEG_2014/Agora_Energiewende_Hintergrund_EEG_2014_29082014_web.pdf.Lastaccess:23/09/2014〉" />
+	</analytic>
+	<monogr>
+		<title level="j">Hintergrundpapier. Agora Energiewende. Online avail</title>
+		<imprint>
+			<date type="published" when="2014">2014. 2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<title level="m" type="main">Multinational Enterprises and Innovation: Regional Learning in Networks</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Heidenreich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Barmeyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Koschatzky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mattes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Beyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Krüth</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+			<publisher>Routledge</publisher>
+			<pubPlace>London; New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Lowcarbon communities as a context for individual behavioural change</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Heiskanen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mikael</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Robinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Vadovics</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Saastamoinen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Energy Policy</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="7586" to="7595" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Can cities shape socio-technical transitions and how would we know if they were?</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hodson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Marvin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Res. Policy</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="477" to="485" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Mediating low-carbon urban transitions? Forms of organization, knowledge and action</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hodson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Marvin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eur. Plan. Stud</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="421" to="439" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">The intermediary organisation of low carbon cities: a comparative analysis of transitions in Greater London and Greater Manchester</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hodson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Marvin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Bulkeley</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Urban Stud</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1403" to="1422" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Transforming the energy sector: the evolution of technological systems in renewable energy technology</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Jacobsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bergek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ind. Corp. Ch</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="815" to="849" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">The politics and policy of energy system transformation -explaining the German diffusion of renewable energy technology</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Jacobsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Lauber</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Energy Policy</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="256" to="276" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Decentralized electricity generation from renewable sources as a chance for local economic development: a qualitative study of two pioneer regions in Germany</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Klagge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Brocke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Energy Sustain. Soc</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="2" to="9" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Future governance of innovation policy in Europe-three scenarios</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kuhlmann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Res. Policy</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="953" to="976" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<monogr>
+		<title level="m" type="main">Local Production Systems in Europe: Rise or Demise?</title>
+		<author>
+			<persName><forename type="first">Le</forename><surname>Galès</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Voelzkow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename></persName>
+		</author>
+		<editor>Crouch, Colin</editor>
+		<imprint>
+			<date type="published" when="2001">2001</date>
+			<publisher>Oxford Univ. Press</publisher>
+			<biblScope unit="page" from="1" to="24" />
+			<pubPlace>Oxford</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Introduction: the governance of local economies</note>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Transition management for sustainable development: A prescriptive, complexity-based governance framework</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Loorbach</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Policy Adm. Inst</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="161" to="183" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<monogr>
+		<title level="m" type="main">Understanding Industrial Transformation: Views from Different Disciplines</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Loorbach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Rotmans</surname></persName>
+		</author>
+		<editor>Olshoorn, X., Wieczorek, A.J.</editor>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+			<publisher>Springer</publisher>
+			<biblScope unit="page" from="187" to="206" />
+			<pubPlace>Dordrecht</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Managing transitions for sustainable development</note>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<monogr>
+		<title level="m" type="main">National systems of innovation: Towards a theory of innovation and interactive learning</title>
+		<editor>Lundvall, B.-Å</editor>
+		<imprint>
+			<date type="published" when="1992">1992</date>
+			<publisher>Pinter</publisher>
+			<pubPlace>London</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Sustainability transitions: an emerging field of research and its prospects</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Markard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Raven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Truffer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Res. Policy</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="955" to="967" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Technological innovation systems and the multi-level perspective: towards an integrated framework</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Markard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Truffer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Res. Policy</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="596" to="615" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<monogr>
+		<title level="m" type="main">Innovation in Multinational Companies: Organisational, International and Regional Dilemmas</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mattes</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+			<publisher>Peter Lang</publisher>
+			<pubPlace>Frankfurt, London</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<monogr>
+		<title level="m" type="main">Auf dem Weg zur Energiewende. Die Entwicklung der Stromproduktion aus erneuerbaren Energien in Deutschland</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Mautz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Byzio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Rosenbaum</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+			<pubPlace>Göttingen</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Universitätsverlag Göttingen</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Green energy clusters and socio-technical transitions: analysis of a sustainable energy cluster for regional economic development in Central Massachusetts</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Mccauley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Stephens</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">USA. Sustain. Sci</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="213" to="225" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Exploring a pioneering bioenergy system: The case of Enköping in Sweden</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Mccormick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Kåberger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Cleaner Production</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="1003" to="1014" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Building capacity for low-carbon communities: the role of grassroots initiatives</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Middlemiss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">D</forename><surname>Parrish</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Energy Policy</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="7559" to="7566" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<monogr>
+		<title level="m" type="main">The Rise and Fall of Strategic Planning</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Mintzberg</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1994">1994</date>
+			<publisher>The Free Press</publisher>
+			<pubPlace>New York, NY</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Long-term scenarios and strategies for the deployment of renewable energies in Germany</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Pregger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Nitsch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Naegler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Energy Policy</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="page" from="350" to="360" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Local niche planning and its strategic implications for implementation of energy-efficient technology</title>
+		<author>
+			<persName><forename type="first">M.-B</forename><surname>Quitzau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Hoffmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Elle</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Technol. Forecast. Social Ch</title>
+		<imprint>
+			<biblScope unit="volume">79</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1049" to="1058" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<monogr>
+		<title level="m" type="main">Socio-cognitive evolution in niche development: comparative analysis of biogas development in Denmark and the Netherlands</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Raven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">W</forename><surname>Geels</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1973">2010. 1973-2004</date>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="87" to="99" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Technovation</note>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Space and scale in socio-technical transitions</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Raven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Schot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Berkhout</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Environ. Innov. Soc. Transit</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="63" to="78" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Urban energy transitions: places, processes and politics of socio-technical change</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Rutherford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Coutard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Urban Stud</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1353" to="1377" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Municipalities as Key Actors of German Renewable Energy Governance. An Analysis of Opportunities, Obstacles, and Multi-Level Influences</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Schönberger</surname></persName>
+		</author>
+		<ptr target="〈http://wupperinst.org/en/publications/details/wi/a/s/ad/2056/〉." />
+	</analytic>
+	<monogr>
+		<title level="j">Wuppertal Paper</title>
+		<imprint>
+			<biblScope unit="volume">186</biblScope>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note>last access: 23.02.14</note>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Strategic niche management and sustainableinnovation journeys: theory, findings, research agenda, and policy</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Schot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">W</forename><surname>Geels</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Technol. Anal. Strateg. Manag</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="537" to="554" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Grassroots innovations for sustainable development: towards a new research and policy agenda</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Seyfang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Smith</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Environ. Polit</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="584" to="603" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Emerging in between: the multi-level governance of renewable energy in the English regions</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Smith</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Energy Policy</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="6266" to="6280" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Energy regions: the transformative power of regional discourses on socio-technical futures</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Späth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Rohracher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Res. Policy</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="449" to="458" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<monogr>
+		<author>
+			<persName><forename type="first">Stadt</forename><surname>Emden</surname></persName>
+		</author>
+		<ptr target="〈https://www.emden.de/fileadmin/media/stadtemden/PDF/FB_300/FD_362/Energie_Klima/klimaschutzkonzept_gesamt_endversion.pdf〉." />
+		<title level="m">Integriertes Kommunales Klimaschutzkonzept</title>
+				<imprint>
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+	<note>last access 20.09.14</note>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">The resurgence of regional economies, ten years later: The region as a nexus of untraded interdependencies</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Storper</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eur. Urban Reg. Stud</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="191" to="221" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Lobbying the &apos;Energiewende&apos;. Assessing the effectiveness of strategies to promote the renewable energy business in Germany</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sühlsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hisschemöller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Energy Policy</title>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="page" from="316" to="325" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<monogr>
+		<title level="m" type="main">Anteile einzelner Marktakteure an Erneuerbare Energien-Anlagen in Deutschland</title>
+		<author>
+			<persName><surname>Trendresearch</surname></persName>
+		</author>
+		<ptr target="〈http://www.trendresearch.de/studien/16-0188-2.pdf?41c6806d6a74510c0999bb1089420467〉." />
+		<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note>last access: 23.09.14</note>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">The space-dimension in technological innovation systems -The global knowledge dynamics of membrane bioreactor technology</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Truffer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Binz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Coenen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">RSA conference 2012</title>
+				<meeting><address><addrLine>Delft</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2012-05-14">2012. May 14th 2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">Environmental Innovation and Sustainability Transitions in</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Truffer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Coenen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Reg. Stud</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="21" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">The ongoing energy transition: lessons from a socio-technical, multi-level analysis of the Dutch electricity system</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">P J</forename><surname>Verbong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">W</forename><surname>Geels</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Energy Policy</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1025" to="1037" />
+			<date type="published" when="1960">2007. 1960-2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Exploring sustainability transitions in the electricity sector with socio-technical pathways</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">P J</forename><surname>Verbong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">W</forename><surname>Geels</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Technol. Forecast. Soc. Ch</title>
+		<imprint>
+			<biblScope unit="volume">77</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1214" to="1221" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -16,6 +16,7 @@ import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathFactory;
 
+import org.grobid.core.data.BibDataSet;
 import org.grobid.core.data.BiblioItem;
 import org.grobid.core.document.Document;
 import org.grobid.core.engines.Engine;
@@ -23,11 +24,15 @@ import org.grobid.core.engines.config.GrobidAnalysisConfig;
 import org.grobid.core.factory.GrobidFactory;
 import org.grobid.core.main.GrobidHomeFinder;
 import org.grobid.core.utilities.GrobidProperties;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Value;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import de.dfki.scilake.dostres.data.ScientificDocument;
 import de.dfki.scilake.dostres.data.ScientificDocumentPart;
@@ -64,9 +69,32 @@ public class Main {
 			BiblioItem bib = new BiblioItem();
 			String tei = engine.processHeader(file.getAbsolutePath(), config, bib);
 
-            ScientificDocument dd = ScientificDocument.createScientificDocument(d.getTei(), bib);
+            //ScientificDocument dd = ScientificDocument.createScientificDocument(d.getTei(), bib);
+            // System.out.println(dd.toRDF("TURTLE"));
 
-            System.out.println(dd.toRDF("TURTLE"));
+            List<BibDataSet> bibs = d.getBibDataSets();
+            for (BibDataSet bibDataSet : bibs) {
+                System.out.println("==========================");
+                System.out.println(bibDataSet.toString());                
+                System.out.println("==========================");
+                System.out.println(bibDataSet.toTEI());                
+                System.out.println("==========================");
+                System.out.println(bibDataSet.getResBib().toString());                
+                System.out.println("==========================");
+                System.out.println(bibDataSet.getResBib().toTEI(4));
+                System.out.println("==========================");
+                JSONObject jsonLocation = new JSONObject();
+                try{
+                    ObjectMapper mapper = new ObjectMapper();
+                    // mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+                    jsonLocation=new JSONObject(mapper.writeValueAsString(bibDataSet.getResBib()));
+                    System.out.println(jsonLocation.toString(4));
+                }catch(Exception e)
+                {
+                    e.printStackTrace();
+                }
+                System.out.println("==========================");
+            }
 
             if(d.getResHeader()!=null){
                 System.out.println(d.getResHeader());
@@ -146,7 +174,7 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
-        process_Energy_UseCase_Files();
-        //process_Energy_Single_File();
+        // process_Energy_UseCase_Files();
+        process_Energy_Single_File();
     }
 }
