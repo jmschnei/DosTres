@@ -1,11 +1,16 @@
 package de.dfki.scilake.dostres.execution;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;
 import java.util.Arrays;
 import java.util.List;
+import java.util.zip.GZIPInputStream;
 
+import org.apache.commons.compress.archivers.tar.TarArchiveEntry;
+import org.apache.commons.compress.archivers.tar.TarArchiveInputStream;
+import org.apache.commons.io.IOUtils;
 import org.grobid.core.data.BibDataSet;
 import org.grobid.core.data.BiblioItem;
 import org.grobid.core.document.Document;
@@ -48,9 +53,7 @@ public class FolderProcessor {
 		Engine engine = GrobidFactory.getInstance().createEngine();
         GrobidAnalysisConfig config = new GrobidAnalysisConfig.GrobidAnalysisConfigBuilder().build();
 
-        long middleTime = System.nanoTime();
-        File folder = new File(folderPath);
-        long middleTime2 = 0;
+        File folder = new File(folderPath + "contents/");
 
         for (File file : folder.listFiles()) {
             if(file.getName().startsWith(".") || file.isDirectory()){
@@ -102,47 +105,136 @@ public class FolderProcessor {
                 // fOutput3 = new File(s3);
                 // OutputStreamWriter osw3 = new OutputStreamWriter(new FileOutputStream(fOutput3));
                 // osw3.write(tei);
-                // osw3.close();	
+                // osw3.close();
                 // System.out.println("DEBUG: document "+fOutput3.getName()+"...STORED");
-
-                String s4 = folderPath + "/output/" + 
-                            file.getName().replace(".pdf","_body.xml");
+                File folder2 = new File(folderPath + "tei/");
+                if (!folder2.exists()){
+                    folder2.mkdir();
+                }
+                String s4 = folderPath + "tei/" + 
+                            file.getName().replace(".pdf",".xml");
                 File fOutput4 = null;
                 fOutput4 = new File(s4);
                 OutputStreamWriter osw4 = new OutputStreamWriter(new FileOutputStream(fOutput4));
                 osw4.write(d.getTei());
                 osw4.close();
                 System.out.println("DEBUG: document "+fOutput4.getName()+"...STORED");
-
-                if (middleTime2==0){
-                    middleTime2 = System.nanoTime();
-                }
             }
         }
         long endTime = System.nanoTime();
-        long duration1 = (middleTime - startTime);  //divide by 1000000 to get milliseconds.
-        long duration2 = (endTime - middleTime2);  //divide by 1000000 to get milliseconds.
-
-        System.out.println("Initialization duration: "+duration1);
-        System.out.println("Processing duration: "+duration2);
+        long duration2 = (endTime - startTime);  //divide by 1000000 to get milliseconds.
+        System.out.println("Processing duration: "+(duration2/1000000));
     }
 
+    public static void processTarGzFile(String folderTar) throws Exception {
+        // TarArchiveInputStream tarInput = new TarArchiveInputStream(new GZIPInputStream(new FileInputStream(tarGzFilePath)));
+        // try  {
+        //     TarArchiveEntry currentEntry = tarInput.getNextTarEntry();
+        //     while(currentEntry != null) {
+        //         File f = currentEntry.getFile();
+        //         System.out.println("Processing file: ");
+
+        //         currentEntry = tarInput.getNextTarEntry();
+        //     }
+        // } catch (Exception e) {
+        //     e.printStackTrace();
+        // }
+        // tarInput.close();
+        File dir = new File(folderTar);
+        File listDir[] = dir.listFiles();
+        if (listDir.length!=0){
+            for (File i:listDir){
+                /*  Warning! this will try and extract all files in the directory
+                    if other files exist, a for loop needs to go here to check that
+                    the file (i) is an archive file before proceeding */
+                //File iFile = new File(i);
+                if (i.isDirectory() || !i.getName().endsWith(".tar.gz")){
+                    continue;
+                }
+                // System.out.println("Processing file: " + i.getName());
+                String fileName2 = i.getName().substring(0, i.getName().lastIndexOf('.'));
+                fileName2 = fileName2.substring(0, fileName2.lastIndexOf('.'));
+
+                String fileName = i.toString();
+                String tarFileName = fileName +".tar";
+                FileInputStream instream= new FileInputStream(fileName);
+                GZIPInputStream ginstream =new GZIPInputStream(instream);
+                FileOutputStream outstream = new FileOutputStream(tarFileName);
+                byte[] buf = new byte[1024]; 
+                int len;
+                while ((len = ginstream.read(buf)) > 0) 
+                {
+                    outstream.write(buf, 0, len);
+                }
+                ginstream.close();
+                outstream.close();
+                //There should now be tar files in the directory
+                //extract specific files from tar
+                TarArchiveInputStream myTarFile=new TarArchiveInputStream(new FileInputStream(tarFileName));
+                TarArchiveEntry entry = null;
+                int offset;
+                FileOutputStream outputFile=null;
+                //read every single entry in TAR file
+                while ((entry = myTarFile.getNextTarEntry()) != null) {
+                    //the following two lines remove the .tar.gz extension for the folder name
+                    File outputDir =  new File(i.getParent() + "/" + fileName2 + "/" + entry.getName());
+                    if(! outputDir.getParentFile().exists()){ 
+                        outputDir.getParentFile().mkdirs();
+                    }
+                    // System.out.println("Extracting: " + entry.getName());
+                    // File f = entry.getFile();
+                    // System.out.println("File in tar: " + f.getName());
+
+                    //if the entry in the tar is a directory, it needs to be created, only files can be extracted
+                    if(entry.isDirectory()){
+                        outputDir.mkdirs();
+                    }else{
+                        System.out.println("" + entry.getName());
+                        byte[] content = new byte[(int) entry.getSize()];
+                        offset=0;
+                        myTarFile.read(content, offset, content.length - offset);
+                        outputFile=new FileOutputStream(outputDir);
+                        IOUtils.write(content,outputFile);  
+                        outputFile.close();
+                    }
+                }
+                //close and delete the tar files, leaving the original .tar.gz and the extracted folders
+                myTarFile.close();
+                File tarFile =  new File(tarFileName);
+                tarFile.delete();
+                processUseCaseFiles(i.getParent() + "/" + fileName2 + "/");
+             }
+         }
+    }
     public static void main(String[] args) throws Exception {
         // initialization();
-         String energy_path = "/Users/julianmorenoschneider/Documents/DFKI/Projects/SciLake/Data/NewData/energy/contents";
-        String energy_1_path = "/Users/julianmorenoschneider/Documents/DFKI/Projects/SciLake/Data/NewData/energy/contents_subset_1";
-        String cancer_path = "/Users/julianmorenoschneider/Documents/DFKI/Projects/SciLake/Data/NewData/cancer/contents";
-        String neuroscience_path = "/Users/julianmorenoschneider/Documents/DFKI/Projects/SciLake/Data/NewData/neuroscience/contents";
-        String transport_ccam_path = "/Users/julianmorenoschneider/Documents/DFKI/Projects/SciLake/Data/NewData/transport_ccam/contents";
-        String transport_maritime_path = "/Users/julianmorenoschneider/Documents/DFKI/Projects/SciLake/Data/NewData/transport_maritime/contents";
-        String outputFormat = "";
-        String language = "";
-        String analysis = "";
-        // processUseCaseFiles(energy_path);
-        // processUseCaseFiles(cancer_path);
-        // processUseCaseFiles(neuroscience_path);
-        processUseCaseFiles(transport_ccam_path);
-        processUseCaseFiles(transport_maritime_path);
+        //  String energy_path = "/Users/julianmorenoschneider/Documents/DFKI/Projects/SciLake/Data/NewData/energy/contents";
+        // String energy_1_path = "/Users/julianmorenoschneider/Documents/DFKI/Projects/SciLake/Data/NewData/energy/contents_subset_1";
+        // String cancer_path = "/Users/julianmorenoschneider/Documents/DFKI/Projects/SciLake/Data/NewData/cancer/contents";
+        // String neuroscience_path = "/Users/julianmorenoschneider/Documents/DFKI/Projects/SciLake/Data/NewData/neuroscience/contents";
+        // String transport_ccam_path = "/Users/julianmorenoschneider/Documents/DFKI/Projects/SciLake/Data/NewData/transport_ccam/contents";
+        // String transport_maritime_path = "/Users/julianmorenoschneider/Documents/DFKI/Projects/SciLake/Data/NewData/transport_maritime/contents";
+        // String outputFormat = "";
+        // String language = "";
+        // String analysis = "";
+        // // processUseCaseFiles(energy_path);
+        // // processUseCaseFiles(cancer_path);
+        // // processUseCaseFiles(neuroscience_path);
+        // processUseCaseFiles(transport_ccam_path);
+        // processUseCaseFiles(transport_maritime_path);
+
+
+        // String path = "/Volumes/TOSHIBA EXT/DFKI/Scilake/data/energy/contents/";
+        // processUseCaseFiles(path);
+
+        // String tarFile = "/Volumes/TOSHIBA EXT/DFKI/Scilake/data/energy/cT2/";
+        // processTarGzFile(tarFile);
+
+        String tarFileFolder = "/Volumes/TOSHIBA EXT/DFKI/Scilake/data/energy/graph.openaire.eu/datasets/scilake/pilots/2025-03-28/energy/contents_subset/";
+        processTarGzFile(tarFileFolder);
+
+        // String tarFolder = "/Volumes/TOSHIBA EXT/DFKI/Scilake/data/energy/compressTest/archive_10/";
+        // processUseCaseFiles(tarFolder);
     }
 
 }
