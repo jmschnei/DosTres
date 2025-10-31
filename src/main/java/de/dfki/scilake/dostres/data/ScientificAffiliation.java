@@ -1,21 +1,18 @@
 package de.dfki.scilake.dostres.data;
 
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.UUID;
 
 import org.grobid.core.data.Affiliation;
-import org.grobid.core.data.Person;
-import org.json.JSONArray;
-import org.json.JSONObject;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
-import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
@@ -79,6 +76,10 @@ public class ScientificAffiliation extends BaseAnnotation{
     List<ScientificLocation> laboratories;
 
 	public ScientificAffiliation() {
+        this.types = Arrays.asList(new String[]{"scilake:ScientificAffiliation"});
+        institutions = new LinkedList<ScientificLocation>();
+        departments = new LinkedList<ScientificLocation>();
+        laboratories = new LinkedList<ScientificLocation>();
 	}
 	
 	/**
@@ -219,4 +220,100 @@ public class ScientificAffiliation extends BaseAnnotation{
     //     }
     //     return jsonAffiliation;
     // }
+
+    public static ScientificAffiliation createScientificAffiliationFromNode(String id, Node node) throws Exception {
+		ScientificAffiliation sca = new ScientificAffiliation();
+        /**
+         * Make the ID unique and related to the author information
+         */
+        //sca.setId(sca.generateId(id, id));
+
+        Element e = (Element) node;
+        NodeList childList = node.getChildNodes();
+
+        String key = e.getAttribute("key");
+        sca.key = key;
+        boolean hasRaw = false;
+
+        for (int h = 0; h < childList.getLength(); h++) {
+            Node authNode = childList.item(h);
+            String nn = authNode.getNodeName();
+            if(nn.equalsIgnoreCase("address")){
+                Element add = (Element) authNode;
+                NodeList childs = authNode.getChildNodes();
+                for (int j = 0; j < childs.getLength(); j++) {
+                    Node n = childs.item(j);
+                    String nname = n.getNodeName();
+                    if(nname.equalsIgnoreCase("settlement")){
+                        Element elem = (Element) n;
+                        String settlement = elem.getTextContent();
+                        sca.settlement = settlement;
+                    }
+                    else if(nname.equalsIgnoreCase("region")){
+                        Element elem = (Element) n;
+                        String region = elem.getTextContent();
+                        sca.region = region;
+                    }
+                    else if(nname.equalsIgnoreCase("country")){
+                        Element elem = (Element) n;
+                        String country = elem.getTextContent();
+                        sca.country = country;
+                        if(elem.hasAttribute("key")){
+                            String country_key = elem.getAttribute("key");
+                            // System.out.println("Country key: " + country_key);
+                        }
+                    }
+                    else if(nname.equalsIgnoreCase("postcode")){
+                        Element elem = (Element) n;
+                        String postcode = elem.getTextContent();
+                        sca.postCode = postcode;
+                    }
+                    else if(nname.equalsIgnoreCase("addrLine")){
+                        Element elem = (Element) n;
+                        String addrLine = elem.getTextContent();
+                        sca.addrLine = addrLine;
+                    }
+                    else if(nname.equalsIgnoreCase("postBox")){
+                        Element elem = (Element) n;
+                        String postBox = elem.getTextContent();
+                        sca.postBox = postBox;
+                    }
+                    else if(nname.equalsIgnoreCase("marker")){
+                        Element elem = (Element) n;
+                        String marker = elem.getTextContent();
+                        sca.marker = marker;
+                    }
+                }
+            }
+            else if(nn.equalsIgnoreCase("orgName")){
+                Element elem = (Element) authNode;
+                String org_type = elem.getAttribute("type");
+                String org = elem.getTextContent();
+                ScientificLocation loc = new ScientificLocation(id, org);
+                if(org_type.equalsIgnoreCase("department")){
+                    sca.departments.add(loc);
+                }
+                else if(org_type.equalsIgnoreCase("institution")){
+                    sca.institutions.add(loc);
+                }
+                else{
+                    sca.laboratories.add(loc);
+                }
+            }
+            else if(nn.equalsIgnoreCase("note")){
+                Element elem = (Element) authNode;
+                String note_type = elem.getAttribute("type");
+                String note = elem.getTextContent();
+                if(note_type.equalsIgnoreCase("raw_affiliation")){
+                    sca.rawAffiliationString = note;
+                    hasRaw = true;
+                }
+            }
+        }
+        if(!hasRaw) {
+            sca.rawAffiliationString = node.getTextContent();
+        }
+        sca.setId(sca.generateId(id,sca.key));
+        return sca;
+    }
 }

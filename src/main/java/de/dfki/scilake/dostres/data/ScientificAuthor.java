@@ -1,15 +1,28 @@
 package de.dfki.scilake.dostres.data;
 
+import java.io.StringReader;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathFactory;
 
 import org.grobid.core.data.Affiliation;
 import org.grobid.core.data.Person;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -63,6 +76,7 @@ public class ScientificAuthor extends BaseAnnotation{
     List<ScientificAffiliation> affiliations = new LinkedList<ScientificAffiliation>();
 
 	public ScientificAuthor() {
+        this.types = Arrays.asList(new String[]{"scilake:ScientificAuthor"});
 	}
 	
 	/**
@@ -169,4 +183,73 @@ public class ScientificAuthor extends BaseAnnotation{
     //         return "{}";
     //     }
     // }
+
+    public static ScientificAuthor createScientificAuthorFromTEI(String id, Node node) throws Exception {
+		ScientificAuthor sca = new ScientificAuthor();
+        /**
+         * Make the ID unique and related to the author information
+         */
+        sca.setReferenceContext("http://scilake-project.eu/res/"+UUID.randomUUID().toString().substring(0,8));
+
+        NodeList authNodeList = node.getChildNodes();
+        for (int h = 0; h < authNodeList.getLength(); h++) {
+            Node authNode = authNodeList.item(h);
+            String nn = authNode.getNodeName();
+            if(nn.equalsIgnoreCase("persName")){
+                NodeList childList = authNode.getChildNodes();
+                for (int j = 0; j < childList.getLength(); j++) {
+                    Node perNode = childList.item(j);
+                    String tag = perNode.getNodeName();
+                    if(tag.equalsIgnoreCase("rolename")){
+                        Element elem = (Element) perNode;
+                        String doc_title = elem.getTextContent();
+                        sca.title = doc_title;
+                    }
+                    else if(tag.equalsIgnoreCase("forename")){
+                        Element elem = (Element) perNode;
+                        String name_type = elem.getAttribute("type");
+                        String name = elem.getTextContent();
+                        if(name_type.equalsIgnoreCase("first")){
+                            sca.firstName = name;
+                        }
+                        else if(name_type.equalsIgnoreCase("middle")){
+                            sca.middleName = name;
+                        }
+                        else{
+                            // by default we assume it is a first name
+                            sca.firstName = name;
+                        }
+                    }
+                    else if(tag.equalsIgnoreCase("surname")){
+                        Element elem = (Element) perNode;
+                        String surname = elem.getTextContent();
+                        sca.lastName = surname;
+                    }
+                /**
+                sca.suffix = person.getSuffix();
+                sca.rawName = person.getRawName();
+                sca.orcid = person.getORCID();
+                sca.corresp = person.getCorresp();
+                sca.affiliationMarkers = person.getAffiliationMarkers();
+                sca.affiliationBlocks  = person.getAffiliationBlocks();
+                sca.markers = person.getMarkers();
+                sca.email = person.getEmail();
+                sca.valid = person.isValid();
+                    */
+                }
+            }
+            else if(nn.equalsIgnoreCase("email")){
+                Element emailElem = (Element) authNode;
+                String email = emailElem.getTextContent();
+                sca.email = email;
+            }
+            else if(nn.equalsIgnoreCase("affiliation")){
+                ScientificAffiliation aff = ScientificAffiliation.createScientificAffiliationFromNode(id,authNode);
+                sca.affiliations.add(aff);
+            }
+        }
+        sca.setId(sca.generateId(id));
+        return sca;
+    }
+
 }

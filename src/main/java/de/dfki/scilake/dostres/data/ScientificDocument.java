@@ -455,7 +455,7 @@ public class ScientificDocument {
             // Model model = ModelFactory.createDefaultModel();
             Model model = createModel();
             StringReader reader = new StringReader(json1);
-            System.out.println(json1);
+            //System.out.println(json1);
             model.read(reader, null, "JSON-LD");
             StringWriter out = new StringWriter();
             model.write(out, syntax);
@@ -651,7 +651,6 @@ public class ScientificDocument {
 
 		String wholeText = "";
 		int counter = 0;
-		List<ScientificAuthor> authors = new LinkedList<ScientificAuthor>();
 
 		DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder = builderFactory.newDocumentBuilder();
@@ -664,13 +663,13 @@ public class ScientificDocument {
 		 */
 		String titleExpression = "//fileDesc/titleStmt/title";
 		NodeList titleNodeList = (NodeList) xPath.compile(titleExpression).evaluate(xmlDocument, XPathConstants.NODESET);
-		System.out.println(titleNodeList.getLength());
+		// System.out.println(titleNodeList.getLength());
 
 		for (int k = 0; k < titleNodeList.getLength(); k++) {
             Node node = titleNodeList.item(k);
 			Element e = (Element) node;
 			String doc_title = e.getTextContent();
-			System.out.println("Title: " + doc_title);
+			// System.out.println("Title: " + doc_title);
 			ScientificDocumentPart titlePart = new ScientificDocumentPart(dd.getId(), doc_title, "", counter, counter+doc_title.length(), doc_title, "title");
 			dd.addPart(titlePart);
 			counter = counter + doc_title.length() + 1;
@@ -681,7 +680,7 @@ public class ScientificDocument {
 		 */
 		String abstractExpression = "//profileDesc/abstract/div";
 		NodeList abstractNodeList = (NodeList) xPath.compile(abstractExpression).evaluate(xmlDocument, XPathConstants.NODESET);
-		System.out.println(abstractNodeList.getLength());
+		// System.out.println(abstractNodeList.getLength());
 
 		for (int k = 0; k < abstractNodeList.getLength(); k++) {
             // Node node = abstractNodeList.item(k);
@@ -720,24 +719,26 @@ public class ScientificDocument {
 		/**
 		 * TODO include keywords
 		 */
+
 		/**
 		 * Code to get the AUTHORs
 		 */
-		// List<Person> persons = bib.getFullAuthors();
-		// if (persons!=null){
-		// 	for (Person person : persons) {
-		// 		System.out.println(person.toString());
-		// 		// ScientificAuthor sci = new ScientificAuthor("http://scilake-project.eu/res", person);
-		// 		ScientificAuthor sci = new ScientificAuthor(dd.getId(), person);
-		// 		System.out.println(sci.toJSON());
-		// 		authors.add(sci);
-		// 	}
-		// 	dd.setAuthors(authors);
-		// }
+		String authorsExpression = "//fileDesc/sourceDesc/biblStruct/analytic/author";
+		NodeList authorsList = (NodeList) xPath.compile(authorsExpression).evaluate(xmlDocument, XPathConstants.NODESET);
+		//System.out.println(authorsList.getLength());
+
+		List<ScientificAuthor> authors = new LinkedList<ScientificAuthor>();
+		for (int k = 0; k < authorsList.getLength(); k++) {
+			Node node = authorsList.item(k);
+	 		ScientificAuthor sci = ScientificAuthor.createScientificAuthorFromTEI(dd.getId(),node);
+			//System.out.println(sci.toJSON());
+			authors.add(sci);
+		}
+		dd.setAuthors(authors);
 
 		String expression = "//body/div";
 		NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
-		System.out.println(nodeList.getLength());
+		//System.out.println(nodeList.getLength());
 
 		String current_category = "introduction";
 		for (int k = 0; k < nodeList.getLength(); k++) {

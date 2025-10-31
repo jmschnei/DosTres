@@ -179,9 +179,10 @@ public class Main {
 
         long middleTime = System.nanoTime();
 
-        String folderPath = "/Users/jumo04/Documents/DFKI/Projects/Scilake/Data/Use Cases Data/";
-        String middlePath = "/contents_subset/output";
+        String folderPath = "/Users/jumo04/Documents/DFKI/Projects/Scilake/Data/Use Cases Data/processedFiles/";
+        String middlePath = "/output";
         String [] cases = new String [] {"energy", "cancer", "neuroscience", "transport_maritime", "transport_ccam"};
+        //String [] cases = new String [] {"cancer"};
         //String [] cases = new String [] {"test"};
 
         long middleTime2 = 0;
@@ -190,7 +191,8 @@ public class Main {
             File folder = new File(folderPath + string + middlePath);
             System.out.println("DEBUG: Processing folder "+folder.getAbsolutePath());
             for (File file : folder.listFiles()) {
-                if(file.getName().startsWith(".") || file.isDirectory() || !file.getName().contains("_body")){
+                //if(file.getName().startsWith(".") || file.isDirectory() || !file.getName().contains("_body")){
+                if(file.getName().startsWith(".") || file.isDirectory()){
                     continue;
                 }
                 System.out.println("DEBUG: Processing document "+file.getName());
@@ -210,7 +212,11 @@ public class Main {
                 //     break;
                 // }
                 // String s2 = folderPath + string + middlePath + "/output/" + 
-                String s2 = folderPath + "processed/" + string + "/" +  
+                File outputFolder = new File(folderPath + string + "/nif/");
+                if(outputFolder.exists() == false){
+                    outputFolder.mkdirs();
+                }
+                String s2 = folderPath + string + "/nif/" +  
                             file.getName().replace("_body.xml",".ttl");
                 File fOutput = null;
                 fOutput = new File(s2);
@@ -231,10 +237,60 @@ public class Main {
         System.out.println("Initialization duration: "+duration1);
         System.out.println("Processing duration: "+duration2);
     }
+    
+    private static void process_Single_File(String path) {
+        long startTime = System.nanoTime();
+        long middleTime = System.nanoTime();
+        long middleTime2 = 0;
+        try {
+            System.out.println("DEBUG: Processing document "+path);
+            // String teiFull = engine.fullTextToTEI(file, config);
+            File file = new File(path);
+            String tei = IOUtils.toString(new FileInputStream(file), "UTF-8");
+            ScientificDocument dd = ScientificDocument.createScientificDocumentFromTEI(tei);
+
+            System.out.println(dd.toRDF("TURTLE"));
+            // if(d.getResHeader()!=null){
+            //     System.out.println(d.getResHeader());
+            // }
+
+            String s2 = "data/test.ttl";
+            File fOutput = new File(s2);
+            OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(fOutput));		
+            osw.write(dd.toRDF("TURTLE"));
+            osw.close();	
+            System.out.println("DEBUG: document "+fOutput.getName()+"...STORED");
+
+            System.out.println("DEBUG: document "+file.getName()+"...DONE");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return;
+        }
+        if (middleTime2==0){
+            middleTime2 = System.nanoTime();
+        }
+        long endTime = System.nanoTime();
+        long duration1 = (middleTime - startTime);  //divide by 1000000 to get milliseconds.
+        long duration2 = (endTime - middleTime2);  //divide by 1000000 to get milliseconds.
+
+        System.out.println("Initialization duration: "+duration1);
+        System.out.println("Processing duration: "+duration2);
+    }
 
     public static void main(String[] args) throws Exception {
         //process_Energy_UseCase_Files();
         //process_Energy_Single_File();
+        //process_All_UseCase_Files();
+
+        // String path = "/Users/jumo04/Documents/DFKI/Projects/Scilake/Data/Use Cases Data/processedFiles/energy/output/copernicuspu::4cfb808030d8207042c9cbf2b27bea30::24f4c8064f2618cab44f42d87a71f514_body.xml";
+        // process_Single_File(path);
+
         process_All_UseCase_Files();
+
+        // String path = "/Users/jumo04/Downloads/10.1371_journal.pone.0029094.tei.xml";
+        // process_Single_File(path);
+        
     }
+
+
 }

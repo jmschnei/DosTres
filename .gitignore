@@ -1,2 +1,3 @@
 target/**
 src/main/java/de/dfki/scilake/dostres/execution/FolderProcessor.java
+data/test.ttl
