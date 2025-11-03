@@ -131,6 +131,74 @@ public class FolderProcessor {
         System.out.println("Processing duration: "+(duration2/1000000));
     }
 
+    public static void uncompressFolder(String folderTar) throws Exception {
+        File dir = new File(folderTar);
+        File listDir[] = dir.listFiles();
+        if (listDir.length!=0){
+            for (File i:listDir){
+                /*  Warning! this will try and extract all files in the directory
+                    if other files exist, a for loop needs to go here to check that
+                    the file (i) is an archive file before proceeding */
+                //File iFile = new File(i);
+                if (i.isDirectory() || !i.getName().endsWith(".tar.gz")){
+                    continue;
+                }
+                // System.out.println("Processing file: " + i.getName());
+                String fileName2 = i.getName().substring(0, i.getName().lastIndexOf('.'));
+                fileName2 = fileName2.substring(0, fileName2.lastIndexOf('.'));
+
+                String fileName = i.toString();
+                String tarFileName = fileName +".tar";
+                FileInputStream instream= new FileInputStream(fileName);
+                GZIPInputStream ginstream =new GZIPInputStream(instream);
+                FileOutputStream outstream = new FileOutputStream(tarFileName);
+                byte[] buf = new byte[1024]; 
+                int len;
+                while ((len = ginstream.read(buf)) > 0) 
+                {
+                    outstream.write(buf, 0, len);
+                }
+                ginstream.close();
+                outstream.close();
+                //There should now be tar files in the directory
+                //extract specific files from tar
+                TarArchiveInputStream myTarFile=new TarArchiveInputStream(new FileInputStream(tarFileName));
+                TarArchiveEntry entry = null;
+                int offset;
+                FileOutputStream outputFile=null;
+                //read every single entry in TAR file
+                while ((entry = myTarFile.getNextTarEntry()) != null) {
+                    //the following two lines remove the .tar.gz extension for the folder name
+                    File outputDir =  new File(i.getParent() + "/" + fileName2 + "/" + entry.getName());
+                    if(! outputDir.getParentFile().exists()){ 
+                        outputDir.getParentFile().mkdirs();
+                    }
+                    // System.out.println("Extracting: " + entry.getName());
+                    // File f = entry.getFile();
+                    // System.out.println("File in tar: " + f.getName());
+
+                    //if the entry in the tar is a directory, it needs to be created, only files can be extracted
+                    if(entry.isDirectory()){
+                        outputDir.mkdirs();
+                    }else{
+                        System.out.println("" + entry.getName());
+                        byte[] content = new byte[(int) entry.getSize()];
+                        offset=0;
+                        myTarFile.read(content, offset, content.length - offset);
+                        outputFile=new FileOutputStream(outputDir);
+                        IOUtils.write(content,outputFile);  
+                        outputFile.close();
+                    }
+                }
+                //close and delete the tar files, leaving the original .tar.gz and the extracted folders
+                myTarFile.close();
+                File tarFile =  new File(tarFileName);
+                tarFile.delete();
+                //processUseCaseFiles(i.getParent() + "/" + fileName2 + "/");
+             }
+         }
+    }
+
     public static void processTarGzFile(String folderTar) throws Exception {
         // TarArchiveInputStream tarInput = new TarArchiveInputStream(new GZIPInputStream(new FileInputStream(tarGzFilePath)));
         // try  {

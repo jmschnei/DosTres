@@ -256,7 +256,7 @@ public class Main {
 
             String s2 = "data/test.ttl";
             File fOutput = new File(s2);
-            OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(fOutput));		
+            OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(fOutput));
             osw.write(dd.toRDF("TURTLE"));
             osw.close();	
             System.out.println("DEBUG: document "+fOutput.getName()+"...STORED");
@@ -268,6 +268,63 @@ public class Main {
         }
         if (middleTime2==0){
             middleTime2 = System.nanoTime();
+        }
+        long endTime = System.nanoTime();
+        long duration1 = (middleTime - startTime);  //divide by 1000000 to get milliseconds.
+        long duration2 = (endTime - middleTime2);  //divide by 1000000 to get milliseconds.
+
+        System.out.println("Initialization duration: "+duration1);
+        System.out.println("Processing duration: "+duration2);
+    }
+
+    public static void processFolderFiles(String folderPath) throws Exception {
+        long startTime = System.nanoTime();
+        long middleTime = System.nanoTime();
+
+        String middlePath = "nif";
+
+
+            File folder = new File(folderPath + string + middlePath);
+            System.out.println("DEBUG: Processing folder "+folder.getAbsolutePath());
+            for (File file : folder.listFiles()) {
+                //if(file.getName().startsWith(".") || file.isDirectory() || !file.getName().contains("_body")){
+                if(file.getName().startsWith(".") || file.isDirectory()){
+                    continue;
+                }
+                System.out.println("DEBUG: Processing document "+file.getName());
+                // String teiFull = engine.fullTextToTEI(file, config);
+                
+                String tei = IOUtils.toString(new FileInputStream(file), "UTF-8");
+                ScientificDocument dd = ScientificDocument.createScientificDocumentFromTEI(tei);
+
+                // System.out.println(dd.toRDF("TURTLE"));
+                // if(d.getResHeader()!=null){
+                //     System.out.println(d.getResHeader());
+                // }
+
+                System.out.println("DEBUG: document "+file.getName()+"...DONE");
+                
+                // if(true){
+                //     break;
+                // }
+                // String s2 = folderPath + string + middlePath + "/output/" + 
+                File outputFolder = new File(folderPath + string + "/nif/");
+                if(outputFolder.exists() == false){
+                    outputFolder.mkdirs();
+                }
+                String s2 = folderPath + string + "/nif/" +  
+                            file.getName().replace("_body.xml",".ttl");
+                File fOutput = null;
+                fOutput = new File(s2);
+                OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(fOutput));		
+                osw.write(dd.toRDF("TURTLE"));
+                osw.close();	
+                System.out.println("DEBUG: document "+fOutput.getName()+"...STORED");
+
+                if (middleTime2==0){
+                    middleTime2 = System.nanoTime();
+                }
+            }            
         }
         long endTime = System.nanoTime();
         long duration1 = (middleTime - startTime);  //divide by 1000000 to get milliseconds.
