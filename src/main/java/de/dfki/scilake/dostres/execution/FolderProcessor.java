@@ -73,6 +73,19 @@ public class FolderProcessor {
                 //     e.printStackTrace();
                 // }
 
+                File folder2 = new File(folderPath + "tei/");
+                if (!folder2.exists()){
+                    folder2.mkdir();
+                }
+                String s4 = folderPath + "tei/" + 
+                            file.getName().replace(".pdf",".xml");
+                File fOutput4 = null;
+                fOutput4 = new File(s4);
+                if(fOutput4.exists()){
+                    System.out.println("DEBUG: document "+fOutput4.getName()+"...SKIPPED");
+                    continue;
+                }
+
                 Document d = null;
                 try {
                     d = engine.fullTextToTEIDoc(file, config);
@@ -107,14 +120,6 @@ public class FolderProcessor {
                 // osw3.write(tei);
                 // osw3.close();
                 // System.out.println("DEBUG: document "+fOutput3.getName()+"...STORED");
-                File folder2 = new File(folderPath + "tei/");
-                if (!folder2.exists()){
-                    folder2.mkdir();
-                }
-                String s4 = folderPath + "tei/" + 
-                            file.getName().replace(".pdf",".xml");
-                File fOutput4 = null;
-                fOutput4 = new File(s4);
                 OutputStreamWriter osw4 = new OutputStreamWriter(new FileOutputStream(fOutput4));
                 osw4.write(d.getTei());
                 osw4.close();
@@ -206,6 +211,24 @@ public class FolderProcessor {
              }
          }
     }
+
+    public static void processFolders(String folderTar) throws Exception {
+        File dir = new File(folderTar);
+        File listDir[] = dir.listFiles();
+        if (listDir.length!=0){
+            for (File i:listDir){
+                /*  Warning! this will try and extract all files in the directory
+                    if other files exist, a for loop needs to go here to check that
+                    the file (i) is an archive file before proceeding */
+                //File iFile = new File(i);
+                if (!i.isDirectory()){
+                    continue;
+                }
+                processUseCaseFiles(i.getPath() + "/");
+             }
+         }
+    }
+
     public static void main(String[] args) throws Exception {
         // initialization();
         //  String energy_path = "/Users/julianmorenoschneider/Documents/DFKI/Projects/SciLake/Data/NewData/energy/contents";
@@ -230,11 +253,17 @@ public class FolderProcessor {
         // String tarFile = "/Volumes/TOSHIBA EXT/DFKI/Scilake/data/energy/cT2/";
         // processTarGzFile(tarFile);
 
-        String tarFileFolder = "/Volumes/TOSHIBA EXT/DFKI/Scilake/data/energy/graph.openaire.eu/datasets/scilake/pilots/2025-03-28/energy/contents_subset/";
-        processTarGzFile(tarFileFolder);
+        // String tarFileFolder = "/Volumes/TOSHIBA EXT/DFKI/Scilake/data/cancer/graph.openaire.eu/datasets/scilake/pilots/2025-03-28/cancer/contents_subset/";
+        // processTarGzFile(tarFileFolder);
 
         // String tarFolder = "/Volumes/TOSHIBA EXT/DFKI/Scilake/data/energy/compressTest/archive_10/";
         // processUseCaseFiles(tarFolder);
+
+        //String tarFileFolder = "/Volumes/TOSHIBA EXT/DFKI/Scilake/data/transport_maritime/graph.openaire.eu/datasets/scilake/pilots/2025-03-28/transport_maritime/contents/";
+        // String tarFileFolder = "/Volumes/TOSHIBA EXT/DFKI/Scilake/data/transport_ccam/";
+        String tarFileFolder = "/Volumes/TOSHIBA EXT/DFKI/Scilake/data/neuroscience/graph.openaire.eu/datasets/scilake/pilots/2025-03-28/neuroscience/contents_subset/";
+        processFolders(tarFileFolder);
+
     }
 
 }
